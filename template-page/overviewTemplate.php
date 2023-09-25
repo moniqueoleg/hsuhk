@@ -1,3 +1,9 @@
+<?php
+/**
+ * Template Name: Overview
+ * Template Post Type: page
+ */
+?>
 <?php require_once "header.php"; ?>
 <main>
     <section class="page-banner position-relative">
