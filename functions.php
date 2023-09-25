@@ -14,6 +14,15 @@ if ( version_compare( $GLOBALS['wp_version'], '5.3', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 }
 
+if ( is_page_template( 'page-templates/overview.php' ) ) {
+	echo '<script>alert("working");</script>';
+	
+	include_once 'page-templates/overview.php';
+}else{
+	echo 'nooooooooooooo';
+}
+
+
 if ( ! function_exists( 'hsuhk_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -28,7 +37,7 @@ if ( ! function_exists( 'hsuhk_setup' ) ) {
 	 */
 	function hsuhk_setup() {
 
-
+		
 		register_nav_menus(
 			array(
 				'primary' => esc_html__( 'Primary menu', 'hsuhk' ),
@@ -115,20 +124,3 @@ function hsuhk_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'hsuhk_scripts' );
-
-
-function my_post_templater($template){
-	if( !is_single() )
-	  return $template;
-	global $wp_query;
-	$c_template = get_post_meta( $wp_query->post->ID, '_wp_page_template', true );
-	return empty( $c_template ) ? $template : $c_template;
-  }
-  
-  add_filter( 'template_include', 'my_post_templater' );
-  
-  function give_my_posts_templates(){
-	add_post_type_support( 'post', 'page-attributes' );
-  }
-  add_action( 'init', 'give_my_posts_templates' );
-  

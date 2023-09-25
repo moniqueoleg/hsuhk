@@ -1,9 +1,6 @@
-<?php
-/**
- * Template Name: Overview
- * Template Post Type: page
- */
-?>
+<?php /* Template Name: PageWithoutSidebar */ ?>
+<?php get_header(); ?>
+
 <?php require_once "header.php"; ?>
 <main>
     <section class="page-banner position-relative">
