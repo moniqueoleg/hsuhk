@@ -24,11 +24,11 @@
  
 </button>
 <!---mobile menu---->
-<script src="static/menu/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="static/menu/script.js"></script>
+<script src="<?=get_template_directory_uri()?>/static/menu/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="<?=get_template_directory_uri()?>/static/menu/script.js"></script>
 <!---mobile menu---->
-<script src="static/js/common.js"></script>
-<script src="static/js/wow.js"></script>
+<script src="<?=get_template_directory_uri()?>/static/js/common.js"></script>
+<script src="<?=get_template_directory_uri()?>/static/js/wow.js"></script>
 <script>
     new WOW().init();
 </script>

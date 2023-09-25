@@ -1224,9 +1224,14 @@ header .header .container .right .menu-item >a {
   justify-content: center;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-
+  cursor: pointer;
 }
 
+
+header .header .container .right .navigation .active>ul{
+  opacity: 1;
+  visibility:visible;
+}
 
 
 header .header .container .right .menu-item >a:hover {

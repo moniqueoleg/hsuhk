@@ -61,20 +61,10 @@ $(function () {
 
 $(function(){
     $('.menu-item').hover(function(){
-        alert(1);
         $(this).addClass('active');
     },function(){
        $(this).removeClass('active');
     })
-
-});
-$(function(){
-    $('.submenu').hover(function(){
-        $(this).addClass('active');
-    },function(){
-       $(this).removeClass('active');
-    })
-
 });
 
 
