@@ -11,6 +11,7 @@
         <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b1.jpg" alt="images"></div>
         <div class="bread">
             <div class="container">
+                
                      <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="About Us">About Us</a>
@@ -41,6 +42,7 @@
                     </div>
                </div>
                <div class="col-md-10 col-sm-12 col-xs-12 right">
+                
                     <div class="pl-3 mt-3">
                         <div class="txt">
                             <div class="Academic mb-3 wow fadeInUp">
@@ -121,8 +123,6 @@
                                             </ul>
                                         </div>
                                     </div>
-                            
-                            
                                 </div>
                         
                             </div>

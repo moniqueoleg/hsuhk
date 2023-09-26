@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, viewport-fit=cover">
 <meta name="format-detection" content="telephone=no, email=no">
-<title>Home</title>
+<?php wp_head(); ?>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon.png">
@@ -38,7 +38,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <div class="left ">
                     <div class="logo">
-                        <a href="index.php"><img src="<?=get_template_directory_uri()?>/static/images/logo.png" alt="logo"></a>
+                        <a href="<?=site_url();?>"><img src="<?=get_template_directory_uri()?>/static/images/logo.png" alt="logo"></a>
                     </div>               
                    
                 </div>

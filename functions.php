@@ -30,12 +30,9 @@ if ( ! function_exists( 'hsuhk_setup' ) ) {
 	 */
 	function hsuhk_setup() {
 		
-		// register_nav_menus(
-		// 	array(
-		// 		'primary' => esc_html__( 'Primary menu', 'hsuhk' ),
-		// 		'footer'  => esc_html__( 'Secondary menu', 'hsuhk' ),
-		// 	)
-		// );		
+		add_theme_support('title-tag');
+		add_theme_support('post-thumbnails');
+		
 		register_nav_menus(
 			array(
 				'primary' => esc_html__( 'Primary menu', 'hsuhk' ),
@@ -44,6 +41,20 @@ if ( ! function_exists( 'hsuhk_setup' ) ) {
 		);		
 	}
 }
+
+function quickchic_widgets_init() {
+	register_sidebar(array(
+	'name' => __( 'Sidebar 1', 'quickchic' ),
+	'id' => 'sidebar-1',
+	'before_widget' => '',
+	'after_widget' => '',
+	'before_title' => '<h4>',
+	'after_title' => '</h4>',
+	));
+}
+add_action( 'init', 'quickchic_widgets_init' );
+
+
 add_action( 'after_setup_theme', 'hsuhk_setup' );
 
 
