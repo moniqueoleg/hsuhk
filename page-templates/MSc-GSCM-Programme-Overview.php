@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: msc-gscm-programme-overview */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,15 +8,15 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b8.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b8.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="Programmes">Programmes</a>
                      <span>/</span>
-                     <a href="" title="Master of Science in Global Supply Chain Management (MSc-GSCM)">Master of Science in Global Supply Chain Management (MSc-GSCM)</a>
+                     <a href="../MSc-GSCM-Cover/" title="Master of Science in Global Supply Chain Management (MSc-GSCM)">Master of Science in Global Supply Chain Management (MSc-GSCM)</a>
                      <span>/</span>
                      <a href="" title="Programme Overview">Programme Overview </a>
             </div>
@@ -33,13 +33,12 @@
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Master of Science in Global Supply Chain Management (MSc-GSCM)">Master of Science in Global Supply Chain Management (MSc-GSCM)</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
                         <ul>         	        
-                            <li><a  href="#" class="active" title="Programme Overview ">Programme Overview </a> </li>        
-                            <li><a  href="#" title="Career Prospects">Career Prospects</a> </li>  
-                            <li><a  href="#"  title="Professional Recognition" >Professional Recognition</a> </li>  
-                            <li><a  href="#" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
-                            <li><a  href="#" title="Experience and Opportunities">Experience and Opportunities</a> </li>  
-                            <li><a  href="#" title="Admission" >Admission</a> </li>  
-                                
+                            <li><a  href="../msc-gscm-programme-overview/" class="active"  title="Programme Overview ">Programme Overview </a> </li>        
+                            <li><a  href="../MSc-GSCM-Academic-Structure/" title="Academic Structure">Academic Structure</a> </li>  
+                            <li><a  href="../MSc-GSCM-Career-Prospects/"   title="Career Prospects" >Career Prospects</a> </li>  
+                            <li><a  href="../MSc-GSCM-Scholarships-FinancialAid/"  title="Scholarship & Financial Aids">Scholarship & Financial Aids</a> </li>        
+                            <li><a  href="../MSc-GSCM-Graduate-Sharing/"  title="Graduate Sharing">Graduate Sharing</a> </li>  
+                            <li><a  href="../MSc-GSCM-Admission/"  title="Admission" >Admission</a> </li>                                 
                         </ul>
                     </div>
                   </div>
@@ -86,36 +85,14 @@
            
                  
                                         </div>
-                                    </li>
-                                   
-
+                                    </li>  
                                 </ul>
                             </div>
                             
-                        </div>
-
-                  
-            
-                
+                        </div>                
                     </div>
                </div>
            </div>
-
        </div>
-    
-          
-
-
-            
     </section>
-
-
-
-
- 
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>

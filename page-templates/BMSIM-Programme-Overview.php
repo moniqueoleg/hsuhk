@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: bmsim-programme-overview */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,15 +8,15 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b88.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b88.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="Programmes">Programmes</a>
                      <span>/</span>
-                     <a href="" title="Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) ">Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) </a>
+                     <a href="../BMSIM-Cover/" title="Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) ">Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) </a>
                      <span>/</span>
                      <a href="" title="Programme Overview">Programme Overview </a>
             </div>
@@ -32,13 +32,13 @@
                     <h2 class="fs20 pc blueLight bold wow fadeInUp" title="Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) ">Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) </h2>
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) ">Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) </h2>
                     <div class="menu-box mt-3 wow fadeInUp">
-                        <ul>         	        
-                            <li><a  href="#" class="active" title="Programme Overview ">Programme Overview </a> </li>        
-                            <li><a  href="#" title="Career Prospects">Career Prospects</a> </li>  
-                            <li><a  href="#"  title="Professional Recognition" >Professional Recognition</a> </li>  
-                            <li><a  href="#" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
-                            <li><a  href="#" title="Experience and Opportunities">Experience and Opportunities</a> </li>  
-                            <li><a  href="#" title="Admission" >Admission</a> </li>  
+                        <ul>
+                            <li><a  href="../bmsim-programme-overview/" class="active" title="Programme Overview ">Programme Overview </a> </li>        
+                            <li><a  href="../BMSIM-Career-Prospects/" title="Career Prospects">Career Prospects</a> </li>  
+                            <li><a  href="../BMSIM-Professional-Recognition/"  title="Professional Recognition" >Professional Recognition</a> </li>  
+                            <li><a  href="../BMSIM-Programme-Pamphlet/" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
+                            <li><a  href="../BMSIM-ExperienceandOpportunities/" title="Experience and Opportunities">Experience and Opportunities</a> </li>  
+                            <li><a  href="../BMSIM-Admission/" title="Admission" >Admission</a> </li>  
                                 
                         </ul>
                     </div>
@@ -102,8 +102,3 @@
 
  
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>

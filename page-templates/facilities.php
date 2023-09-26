@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: facilities */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,13 +8,13 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b4.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b4.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
-                     <a href="" title="Teaching & Learning">Teaching & Learning</a>
+                     <a href="../why-choose-our-programmes/" title="Teaching & Learning">Teaching & Learning</a>
                      <span>/</span>
                      <a href="" title="Facilities">Facilities</a>
             </div>
@@ -30,12 +30,12 @@
                     <h2 class="fs20 pc blueLight bold wow fadeInUp" title="Teaching & Learning">Teaching & Learning</h2>
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Teaching & Learning">Teaching & Learning</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
-                        <ul>         	        
-                            <li><a  href="#" title="Why Choose Our Programmes?">Why Choose Our Programmes?</a> </li>        
-                            <li><a  href="#"  class="active" title="Facilities">Facilities</a> </li>  
-                            <li><a  href="#"  title="Mentorship " >Mentorship </a> </li>  
-                            <li><a  href="#" title="Scholarships & Financial Aid">Scholarships & Financial Aid</a> </li>        
-                        
+                    <ul>         	        
+                            <li><a  href="../why-choose-our-programmes/"title="Why Choose Our Programmes?">Why Choose Our Programmes?</a> </li>        
+                            <li><a  href="../facilities/" class="active"  title="Facilities">Facilities</a> </li>  
+                            <li><a  href="../Mentorship/" title="Mentorship " >Mentorship </a> </li>  
+                            <li><a  href="../scholarships-financial-aid/"  title="Scholarships & Financial Aid">Scholarships & Financial Aid</a> </li>        
+                              
                         </ul>
                     </div>
                   </div>
@@ -68,11 +68,11 @@
                             <div id="certify">
                                 <div class="swiper-container">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><img src="static/images/certify01.jpg" /><p>DST Lab locate in Block A, 2/F</p></div>
-                                        <div class="swiper-slide"><img src="static/images/certify02.jpg" /><p>Inside facilities of DST Lab</p></div>
-                                        <div class="swiper-slide"><img src="static/images/certify03.jpg" /><p>Opening Ceremony of DST Lab on 13 March 2014</p></div>
-                                        <div class="swiper-slide"><img src="static/images/certify04.jpg" /><p>Inside facilities of DST Lab</p></div>
-                                        <div class="swiper-slide"><img src="static/images/certify05.jpg" /><p>HSMC senior management, honourable guests and SCM staff took photo during the Opening Ceremony</p></div>
+                                        <div class="swiper-slide"><img src="<?=get_template_directory_uri()?>/static/images/certify01.jpg" /><p>DST Lab locate in Block A, 2/F</p></div>
+                                        <div class="swiper-slide"><img src="<?=get_template_directory_uri()?>/static/images/certify02.jpg" /><p>Inside facilities of DST Lab</p></div>
+                                        <div class="swiper-slide"><img src="<?=get_template_directory_uri()?>/static/images/certify03.jpg" /><p>Opening Ceremony of DST Lab on 13 March 2014</p></div>
+                                        <div class="swiper-slide"><img src="<?=get_template_directory_uri()?>/static/images/certify04.jpg" /><p>Inside facilities of DST Lab</p></div>
+                                        <div class="swiper-slide"><img src="<?=get_template_directory_uri()?>/static/images/certify05.jpg" /><p>HSMC senior management, honourable guests and SCM staff took photo during the Opening Ceremony</p></div>
                                     </div>
                                 </div>
                                 <div class="swiper-pagination"></div>
@@ -107,6 +107,4 @@
 
  
 </main>
-<?php require_once "footer.php"; ?>
-</body>
-</html>
+

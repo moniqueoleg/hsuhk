@@ -1,10 +1,10 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: MSc-GSCM-Cover */ ?>
 <main>
     <section class="banner position-relative wow fadeInUp">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="boximg"><img src="static/images/side2.jpg" alt="banner"></div>
+                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/side2.jpg" alt="banner"></div>
                     <div class="inner">
                         <div class="container">
                             <div class="banText banText2">
@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="boximg"><img src="static/images/side2.jpg" alt="banner"></div>
+                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/side2.jpg" alt="banner"></div>
                     <div class="inner">
                         <div class="container">
                             <div class="banText banText2">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="boximg"><img src="static/images/side2.jpg" alt="banner"></div>
+                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/side2.jpg" alt="banner"></div>
                     <div class="inner">
                         <div class="container">
                             <div class="banText banText2">
@@ -43,7 +43,6 @@
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
- 
 
     </section>
 
@@ -54,38 +53,38 @@
             <div class="mneubar">
                 <div class="row justify-content-between">
                     <div class="col-md-2 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                        <a href="">
-                            <img src="static/images/i7.svg" alt="Programme Overview">
+                        <a href="../msc-gscm-programme-overview/">
+                            <img src="<?=get_template_directory_uri()?>/static/images/i7.svg" alt="Programme Overview">
                             <h3 class="fs20 text-center bold blueText">Programme Overview</h3>
                         </a>
                     </div>
                     <div class="col-md-2 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                        <a href="">
-                            <img src="static/images/i8.svg" alt="Academic Structure"> 
+                        <a href="../MSc-GSCM-Academic-Structure/">
+                            <img src="<?=get_template_directory_uri()?>/static/images/i8.svg" alt="Academic Structure"> 
                             <h3 class="fs20 text-center bold blueText">Academic Structure</h3>
                         </a>
                     </div>
                     <div class="col-md-2 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                        <a href="">
-                            <img src="static/images/i9.svg" alt="Career Prospects">
+                        <a href="../MSc-GSCM-Career-Prospects/">
+                            <img src="<?=get_template_directory_uri()?>/static/images/i9.svg" alt="Career Prospects">
                             <h3 class="fs20 text-center bold blueText">Career<br/> Prospects</h3>
                         </a>
                     </div>
                     <div class="col-md-2 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                        <a href="">
-                            <img src="static/images/i10.svg" alt="Scholarship & Financial Aids">
+                        <a href="../MSc-GSCM-Scholarships-FinancialAid/">
+                            <img src="<?=get_template_directory_uri()?>/static/images/i10.svg" alt="Scholarship & Financial Aids">
                             <h3 class="fs20 text-center bold blueText">Scholarship & Financial Aids</h3>
                         </a>
                     </div>
                     <div class="col-md-2 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                        <a href="">
-                            <img src="static/images/i11.svg" alt="Graduate Sharing">
+                        <a href="../MSc-GSCM-Graduate-Sharing/">
+                            <img src="<?=get_template_directory_uri()?>/static/images/i11.svg" alt="Graduate Sharing">
                             <h3 class="fs20 text-center bold blueText">Graduate<br/> Sharing</h3>
                         </a>
                     </div>
                     <div class="col-md-2 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                        <a href="">
-                            <img src="static/images/i12.svg" alt="Admission">
+                        <a href="../MSc-GSCM-Admission/">
+                            <img src="<?=get_template_directory_uri()?>/static/images/i12.svg" alt="Admission">
                             <h3 class="fs20 text-center bold blueText">Admission</h3>
                         </a>
                     </div>
@@ -95,7 +94,7 @@
                 <div class='col-md-7 col-sm-12 col-xs-12 mt-4 wow fadeInUp'>
                    <div class="title fs36 bold mb-3">Video</div> 
                    <div class="video">
-                       <img src="static/images/video.jpg" alt="video">
+                       <img src="<?=get_template_directory_uri()?>/static/images/video.jpg" alt="video">
                    </div>
                </div>
                <div class='col-md-5 col-sm-12 col-xs-12 mt-4 wow fadeInUp'>
@@ -106,7 +105,7 @@
                                <em class="year">May, 2023</em>
                         </div>
                         <div class="boximg">
-                           <img src="static/images/ss1.jpg" alt="news">
+                           <img src="<?=get_template_directory_uri()?>/static/images/ss1.jpg" alt="news">
                         
                         </div>
                         <div class="con fs20">
@@ -133,5 +132,3 @@
 <?php require_once "footer2.php"; ?>
 
 
-</body>
-</html>

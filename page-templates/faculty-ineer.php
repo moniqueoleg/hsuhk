@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: faculty-ineer */ ?>
 <main>
     <section class="page-banner position-relative wow fadeInUp">
         <div class="inner">
@@ -8,10 +8,10 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b1.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b1.jpg" alt="images"></div>
         <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="About Us">About Us</a>
                      <span>/</span>
@@ -23,7 +23,6 @@
         </div>
     </section>
 
-
   
     <section class="index-block py-5 wow fadeInUp" >
        <div class="container">
@@ -33,10 +32,10 @@
                     <h2 class="fs20 mobile blueText bold wow fadeInUp" title="About Us">About Us</h2>
                     <div class='htmleaf-container wow fadeInUp'>
                         <div class="menu-box htmleaf-content bgcolor-3  ">
-                            <ul class="mtree bubba">         
-                                <li><a  href="#" title="Overview">Overview</a></li>						                  	        
-                                <li><a  href="/"  class="active" title="Faculty">Faculty</a> </li>        
-                                <li><a  href="/" title="Contact Us">Contact Us</a> </li>                     
+                            <ul class="mtree bubba">         	        
+                                <li><a  href="../overview/"  title="Overview">Overview</a> </li>        
+                                <li><a  href="../faculty/" class="active"  title="Staff">Faculty</a> </li>  
+                                <li><a  href="../contact-us/"  title="Contact Us" >Contact Us</a> </li>                                  
                             </ul>
                         </div>
                     </div>
@@ -49,13 +48,13 @@
                                     <div class="row">
                                         <div class="col-md-5 col-sm-12 col-xs-12 mt-3">
                                             <div class="ten">
-                                                <div class="imgs"><img src="static/images/sta1.jpg" alt="images"></div>
+                                                <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/sta1.jpg" alt="images"></div>
                                                 <div class="right fs18">
                                                     <h4 class="fs20 blueLight bold">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <dl>
-                                                        <dd><img src="static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></dd>
-                                                        <dd><img src="static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></dd>
-                                                        <dd><img src="static/images/door.svg" alt="icos"><span>Office : D612</span></dd>
+                                                        <dd><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></dd>
+                                                        <dd><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></dd>
+                                                        <dd><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : D612</span></dd>
                                                     </dl>
                                                 </div>
                                             </div>
@@ -154,8 +153,3 @@
 
  
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>

@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: MSc-GSCM-Academic-Structure */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,15 +8,15 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b6.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b6.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="Programmes">Programmes</a>
                      <span>/</span>
-                     <a href="" title="Master of Science in Global Supply Chain Management (MSc-GSCM) ">Master of Science in Global Supply Chain Management (MSc-GSCM)</a>
+                     <a href="../MSc-GSCM-Cover/" title="Master of Science in Global Supply Chain Management (MSc-GSCM) ">Master of Science in Global Supply Chain Management (MSc-GSCM)</a>
                      <span>/</span>
                      <a href="" title="Academic Structure">Academic Structure</a>
             </div>
@@ -32,13 +32,13 @@
                     <h2 class="fs20 pc blueLight bold wow fadeInUp" title="Master of Science in Global Supply Chain Management (MSc-GSCM)">Master of Science in Global Supply Chain Management (MSc-GSCM)</h2>
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Master of Science in Global Supply Chain Management (MSc-GSCM)">Master of Science in Global Supply Chain Management (MSc-GSCM)</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
-                        <ul>         	        
-                            <li><a  href="#"  title="Programme Overview ">Programme Overview </a> </li>        
-                            <li><a  href="#" class="active" title="Academic Structure">Academic Structure</a> </li>  
-                            <li><a  href="#"  title="Career Prospects" >Career Prospects</a> </li>  
-                            <li><a  href="#" title="Scholarship & Financial Aids">Scholarship & Financial Aids</a> </li>        
-                            <li><a  href="#" title="Graduate Sharing">Graduate Sharing</a> </li>  
-                            <li><a  href="#" title="Admission" >Admission</a> </li>  
+                    <ul>         	        
+                            <li><a  href="../msc-gscm-programme-overview/"  title="Programme Overview ">Programme Overview </a> </li>        
+                            <li><a  href="../MSc-GSCM-Academic-Structure/" class="active" title="Academic Structure">Academic Structure</a> </li>  
+                            <li><a  href="../MSc-GSCM-Career-Prospects/"   title="Career Prospects" >Career Prospects</a> </li>  
+                            <li><a  href="../MSc-GSCM-Scholarships-FinancialAid/" title="Scholarship & Financial Aids">Scholarship & Financial Aids</a> </li>        
+                            <li><a  href="../MSc-GSCM-Graduate-Sharing/"   title="Graduate Sharing">Graduate Sharing</a> </li>  
+                            <li><a  href="../MSc-GSCM-Admission/"  title="Admission" >Admission</a> </li>  
                                 
                         </ul>
                     </div>
@@ -68,7 +68,7 @@
                                                             <td>SCM6001</td>
                                                             <td>
                                                              <p>  Contemporary Operations Management</p>
-                                                             <p><img src="static/images/c.png" alt="images">(CEF Course Code:33Z118762)</p>
+                                                             <p><img src="<?=get_template_directory_uri()?>/static/images/c.png" alt="images">(CEF Course Code:33Z118762)</p>
                                                             </td>
                                                             <td>3</td>
                                                         </tr>
@@ -76,7 +76,7 @@
                                                             <td>SCM6002</td>
                                                             <td>
                                                             <p>Global Supply Chain Management</p>
-                                                            <p><img src="static/images/c.png" alt="images"> (CEF Course Code:33Z118770)</p>
+                                                            <p><img src="<?=get_template_directory_uri()?>/static/images/c.png" alt="images"> (CEF Course Code:33Z118770)</p>
                                                             </td>
                                                             <td>3</td>
                                                         </tr>
@@ -84,7 +84,7 @@
                                                             <td>SCM6003</td>
                                                             <td>
                                                             <p>Transport Logistics and Law</p>
-                                                            <p><img src="static/images/c.png" alt="images"> (CEF Course Code:33Z118797)</p>
+                                                            <p><img src="<?=get_template_directory_uri()?>/static/images/c.png" alt="images"> (CEF Course Code:33Z118797)</p>
                                                             </td>
                                                             <td>3</td>
                                                         </tr>
@@ -93,7 +93,7 @@
                                                             <td>SCM6004</td>
                                                             <td>
                                                             <p>Strategic Procurement Management</p>
-                                                            <p><img src="static/images/c.png" alt="images"> (CEF Course Code:33Z118800)</p>
+                                                            <p><img src="<?=get_template_directory_uri()?>/static/images/c.png" alt="images"> (CEF Course Code:33Z118800)</p>
                                                             </td>
                                                             <td>3</td>
                                                         </tr>
@@ -102,7 +102,7 @@
                                                             <td>SCM6005</td>
                                                             <td>
                                                             <p>Decision Modelling for Managers</p>
-                                                            <p><img src="static/images/c.png" alt="images"> (CEF Course Code:33Z118789)</p>
+                                                            <p><img src="<?=get_template_directory_uri()?>/static/images/c.png" alt="images"> (CEF Course Code:33Z118789)</p>
                                                             </td>
                                                             <td>3</td>
                                                         </tr>
@@ -172,7 +172,7 @@
                                             </div>
                                             <div class="cons">
                                                 <p>* Number of elective to be offered will be subject to the curriculum plan of each academic year</p>
-                                                <p><img src="static/images/c.png" title="images"> This module has been included in the list of reimbursable courses under the Continuing Education Fund;The mother programme (Master of Science in Global Supply Chain Management) of this module is recognised under the Qualifications Framework (QF Level 6)</p>
+                                                <p><img src="<?=get_template_directory_uri()?>/static/images/c.png" title="images"> This module has been included in the list of reimbursable courses under the Continuing Education Fund;The mother programme (Master of Science in Global Supply Chain Management) of this module is recognised under the Qualifications Framework (QF Level 6)</p>
                                                 <p><u>Qualifications Register</u><br/>QR Registration No.: 18/000855/L6<br/>Registration Validity Period: 08/11/2018 to 31/08/2025<br/>Level: 6</p>
                                             </div>
                                         </div>
@@ -292,7 +292,7 @@
                         <div class="title mt-5 fs28 white  wow fadeInUp" title="Graduate Requirements">Graduate Requirements</div>
                         <div class="txt fs18  wow fadeInUp">
                             <p>Completion of Eight 3-credit modules (in total 24 credits), including Five core modules and three elective modules; and Four SCM Professional Development Activities; and Attainment of a minimum cumulative GPA of 2.0</p>
-                            <img src="static/images/aa.jpg" alt="images">
+                            <img src="<?=get_template_directory_uri()?>/static/images/aa.jpg" alt="images">
                         </div>
 
                   
@@ -315,8 +315,3 @@
 
  
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>

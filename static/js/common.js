@@ -20,19 +20,24 @@ $(".user a").click(function(){
 })
 
 $(".close").click(function(){
-  $(".modal").removeClass("show in")
+  $(".modal").removeClass("show in");
+  $("main").css("z-index","0");
+  $(".pup").removeClass("active");
+
 })
 
 $(".index-block .IOlist .col-md-12 a,.index-block .IOlist .col-md-6 a,.index-block .news .evlist .items").click(function(){
   var num = $(".index-block .IOlist .col-md-12 a,.index-block .IOlist .col-md-6 a,.index-block .news .evlist .items a").index($(this));
   $(".index-block .IOlist .col-md-12,.index-block .IOlist .col-md-6,.index-block .news .evlist .items").eq(num).find(".pup").addClass("active");
   $("main").css("z-index","9999");
-  $(".IOlist").css("z-index","99")
+  $(".IOlist").css("z-index","99");
+
 })
 
 
 $(".pup .close,.pupback").click(function(){
   $(".pup").removeClass("active")
+  $("main").css("z-index","0");
 })
 
 

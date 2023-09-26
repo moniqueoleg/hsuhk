@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: BMSIM-Career-Prospects */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,15 +8,15 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b88.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b88.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="Programmes">Programmes</a>
                      <span>/</span>
-                     <a href="" title=" Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) "> Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</a>
+                     <a href="../BMSIM-Cover/" title=" Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) "> Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</a>
                      <span>/</span>
                      <a href="" title="Career Prospects">Career Prospects</a>
             </div>
@@ -32,13 +32,13 @@
                      <h2 class="fs20 pc blueLight bold wow fadeInUp" title="Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)">Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</h2>
                      <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)">Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</h2>
                      <div class="menu-box mt-3 wow fadeInUp">
-                        <ul>         	        
-                            <li><a  href="#"  title="Programme Overview ">Programme Overview </a> </li>        
-                            <li><a  href="#" class="active" title="Career Prospects">Career Prospects</a> </li>  
-                            <li><a  href="#"  title="Professional Recognition" >Professional Recognition</a> </li>  
-                            <li><a  href="#" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
-                            <li><a  href="#" title="Experience and Opportunities">Experience and Opportunities</a> </li>  
-                            <li><a  href="#" title="Admission" >Admission</a> </li>  
+                        <ul>
+                            <li><a  href="../bmsim-programme-overview/" title="Programme Overview ">Programme Overview </a> </li>        
+                            <li><a  href="../BMSIM-Career-Prospects/" class="active" title="Career Prospects">Career Prospects</a> </li>  
+                            <li><a  href="../BMSIM-Professional-Recognition/"  title="Professional Recognition" >Professional Recognition</a> </li>  
+                            <li><a  href="../BMSIM-Programme-Pamphlet/" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
+                            <li><a  href="../BMSIM-ExperienceandOpportunities/" title="Experience and Opportunities">Experience and Opportunities</a> </li>  
+                            <li><a  href="../BMSIM-Admission/" title="Admission" >Admission</a> </li>  
                                 
                         </ul>
                     </div>
@@ -61,7 +61,7 @@
                             </ul>
                             <p>With the rapid development of e-commerce, different industries are trying to keep pace with the times, hope to make use of information systems to improve management efficiency.</p>
                             <p>The results of the graduate employment survey in 2021 revealed that while the pandemic hit the whole global economy, the mean salary of BMSIM graduates increased by 0.96% compared to the graduates in 2020. The increasing salary shows that the industry highly values our graduates' knowledge and skills.</p>
-                            <img src="static/images/ca.jpg" alt="images">
+                            <img src="<?=get_template_directory_uri()?>/static/images/ca.jpg" alt="images">
                         </div>
 
                         <div class="title fs28 mt-5 white  wow fadeInUp" title="Graduate Sharing">Graduate Sharing</div>
@@ -70,7 +70,7 @@
                                 <div class="row">
                                     <div class="col-md-6  col-sm-12 col-xs-12 mb-3 wow fadeInUp">
                                         <a href="javascript:;">
-                                            <div class="imgs"><img src="static/images/shd.jpg" alt="pic"></div>
+                                            <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/shd.jpg" alt="pic"></div>
                                             <div class="right">
                                                 <h4 class="fs20 blueText bold">CHEUNG Chak Yiu</h4>
                                                 <p class="fs18">Class of 2022 Bachelor of Management Science and Information Management (Honours)</p>
@@ -83,7 +83,7 @@
                                                     <div class="close"></div> 
                                                     <div class="row">
                                                         <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                            <div class='pic'><img src="static/images/sh8.jpg" alt="pic"></div>
+                                                            <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/sh8.jpg" alt="pic"></div>
                                                         </div>
                                                         <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                             <div class="fs32 bold blueText">Oscar Shek</div>
@@ -101,7 +101,7 @@
                                     </div>
                                     <div class="col-md-6  col-sm-12 col-xs-12 mb-3 wow fadeInUp">
                                         <a href="javascript:;">
-                                            <div class="imgs"><img src="static/images/shd.jpg" alt="pic"></div>
+                                            <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/shd.jpg" alt="pic"></div>
                                             <div class="right">
                                                 <h4 class="fs20 blueText bold">YU Chi San</h4>
                                                 <p class="fs18">Class of 2017 Bachelor of Management Science and Information Management (Honours)</p>
@@ -114,7 +114,7 @@
                                                     <div class="close"></div> 
                                                     <div class="row">
                                                         <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                            <div class='pic'><img src="static/images/sh8.jpg" alt="pic"></div>
+                                                            <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/sh8.jpg" alt="pic"></div>
                                                         </div>
                                                         <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                             <div class="fs32 bold blueText">Oscar Shek</div>
@@ -132,7 +132,7 @@
                                     </div>
                                     <div class="col-md-6  col-sm-12 col-xs-12 mb-3 wow fadeInUp">
                                         <a href="javascript:;">
-                                            <div class="imgs"><img src="static/images/shd.jpg" alt="pic"></div>
+                                            <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/shd.jpg" alt="pic"></div>
                                             <div class="right">
                                                 <h4 class="fs20 blueText bold">Felix CHAN</h4>
                                                 <p class="fs18">Class of 2017 Bachelor of Management Science and Information Management (Honours)</p>
@@ -145,7 +145,7 @@
                                                     <div class="close"></div> 
                                                     <div class="row">
                                                         <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                            <div class='pic'><img src="static/images/sh8.jpg" alt="pic"></div>
+                                                            <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/sh8.jpg" alt="pic"></div>
                                                         </div>
                                                         <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                             <div class="fs32 bold blueText">Oscar Shek</div>
@@ -186,8 +186,3 @@
 
  
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>

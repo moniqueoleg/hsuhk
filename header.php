@@ -39,38 +39,37 @@
                 <div class="left ">
                     <div class="logo">
                         <a href="index.php"><img src="<?=get_template_directory_uri()?>/static/images/logo.png" alt="logo"></a>
-                    </div>
-                
+                    </div>               
                    
                 </div>
                 <div class="right nav-outer">
-                   
                     
                     <div class="nav-box main-menu d-none d-md-block ">
                         <?php
+                        
                             wp_nav_menu(array(
                                 'theme_location' => 'primary',
                                 'menu_class' => 'nav  navigation justify-content-end',
                                 'menu_item_class' => 'nav-item dropdown',
-                                'container'      => 'nav-box main-menu d-none d-md-block',
-                        
+                                'container'      => 'nav-box main-menu d-none d-md-block',                        
                             ));
-                        ?>        
+                        ?>                       
+                    </div>
 
-                       
-                    </div>
                     <div class="lang">
-                        <a href="" title="en">EN</a>
-                        <span>/</span>
-                        <a href="" title="繁體">繁體</a>
-                    </div>
-                    <div class="icon-box mobile-nav-toggler d-flex d-md-none align-items-center">
-                        <button class="btn collapsed d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseNav" aria-expanded="false">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
+                        <?php if (function_exists('pll_the_languages')): ?>
+                            <?php $languages = pll_the_languages(array('raw'=>1)); ?>
+                            <?php foreach ($languages as $language): ?>
+                                <a href="<?php echo $language['url']; ?>" title="<?php if ($language['name']=="en"): echo "EN"; elseif ($language['name']=="zh"): echo "繁體"; endif; ?>">
+                                    <!-- <?php echo $language['slug']; ?> -->
+                                    <?php if ($language['slug']=="en"): echo "EN"; elseif ($language['slug']=="zh"): echo "繁體"; endif; ?>
+                                </a>
+                                <?php if ($language != end($languages)): ?>
+                                    <span>/</span>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>                    
                 </div>
             </div>
           
@@ -84,12 +83,21 @@
 				<!-- Search -->
                 <div class='nav-logo'>
                     <div class="lang">
-                        <a href="" class="active"  title="en">EN</a>
-                        <a href="" title="繁體">繁</a>
+                        <?php if (function_exists('pll_the_languages')): ?>
+                            <?php $languages = pll_the_languages(array('raw'=>1)); ?>
+                            <?php foreach ($languages as $language): ?>
+                                <a href="<?php echo $language['url']; ?>" class="<?php if ($language['slug']=="en"): echo "active"; else: echo ""; endif; ?>" title="<?php echo $language['name'] ?>">
+                                    <!-- <?php echo $language['slug']; ?> -->
+                                    <?php if ($language['slug']=="en"): echo "EN"; elseif ($language['slug']=="zh"): echo "繁"; endif; ?>
+                                </a>
+                                
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                        <!-- <a href="" class="active"  title="en">EN</a>
+                        <a href="" title="繁體">繁</a> -->
                     </div>
                 </div>
-                <div class="menu-outer"></div>
-				
+                <div class="menu-outer"></div>				
 			
             </nav>
         </div>

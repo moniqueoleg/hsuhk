@@ -14,13 +14,6 @@ if ( version_compare( $GLOBALS['wp_version'], '5.3', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 }
 
-if ( is_page_template( 'page-templates/overview.php' ) ) {
-	echo '<script>alert("working");</script>';
-	
-	include_once 'page-templates/overview.php';
-}else{
-	echo 'nooooooooooooo';
-}
 
 
 if ( ! function_exists( 'hsuhk_setup' ) ) {
@@ -36,15 +29,19 @@ if ( ! function_exists( 'hsuhk_setup' ) ) {
 	 * @return void
 	 */
 	function hsuhk_setup() {
-
 		
+		// register_nav_menus(
+		// 	array(
+		// 		'primary' => esc_html__( 'Primary menu', 'hsuhk' ),
+		// 		'footer'  => esc_html__( 'Secondary menu', 'hsuhk' ),
+		// 	)
+		// );		
 		register_nav_menus(
 			array(
 				'primary' => esc_html__( 'Primary menu', 'hsuhk' ),
 				'footer'  => esc_html__( 'Secondary menu', 'hsuhk' ),
 			)
-		);
-		
+		);		
 	}
 }
 add_action( 'after_setup_theme', 'hsuhk_setup' );
@@ -124,3 +121,19 @@ function hsuhk_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'hsuhk_scripts' );
+
+function redirect_to_language_url() {
+    // Check if a language parameter is present in the URL
+    if ( isset( $_GET['lang'] ) ) {
+        $language = sanitize_text_field( $_GET['lang'] );
+        
+        // Modify the URL based on the selected language
+        $current_url = home_url( add_query_arg( null, null ) );
+        $redirect_url = str_replace( home_url(), home_url( $language ), $current_url );
+        
+        // Redirect the user to the modified URL
+        wp_redirect( $redirect_url, 301 );
+        exit;
+    }
+}
+add_action( 'template_redirect', 'redirect_to_language_url' );

@@ -1,20 +1,15 @@
 <?php
 
-
 get_header();
 
+$permalink =  get_permalink();
 
-get_template_part( 'template-page' ,'OverviewTemplate');
-/* Start the Loop */
-while ( have_posts() ) :
-	the_post();
-	get_template_part( 'template-page' ,'OverviewTemplate');
-	
+$page_name = basename($permalink);
 
-	// If comments are open or there is at least one comment, load up the comment template.
-	if ( comments_open() || get_comments_number() ) {
-		comments_template();
-	}
-endwhile; // End of the loop.
+if (pll_current_language() == 'en'):
+    get_template_part( 'page-templates/'.$page_name );
+elseif (pll_current_language() == 'zh'):
+    get_template_part( 'page-templates/zh/'.str_replace('-zh', '', $page_name) );
+endif;
 
 get_footer();

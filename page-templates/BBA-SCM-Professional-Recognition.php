@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: BBA-SCM-Professional-Recognition */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,15 +8,15 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b7.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b7.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="Programmes">Programmes</a>
                      <span>/</span>
-                     <a href="" title="Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)  ">Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01) </a>
+                     <a href="../BBA-SCM-Cover/" title="Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)  ">Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01) </a>
                      <span>/</span>
                      <a href="" title="Professional Recognition">Professional Recognition</a>
             </div>
@@ -33,12 +33,12 @@
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)">Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
                         <ul>         	        
-                            <li><a  href="#" title="Programme Overview " >Programme Overview </a> </li>        
-                            <li><a  href="#" title="Career Prospects">Career Prospects</a> </li>  
-                            <li><a  href="#" class="active" title="Professional Recognition">Professional Recognition</a> </li>  
-                            <li><a  href="#" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
-                            <li><a  href="#" title="Experience and Opportunities">Experience and Opportunities</a> </li>  
-                            <li><a  href="#" title="Admission">Admission</a> </li>  
+                            <li><a  href="../bba-scm-programme-overview/"title="Programme Overview ">Programme Overview </a> </li>        
+                            <li><a  href="../BBA-SCM-Career-Prospects/" title="Career Prospects">Career Prospects</a> </li>  
+                            <li><a  href="../BBA-SCM-Professional-Recognition/"  class="active"  title="Professional Recognition" >Professional Recognition</a> </li>  
+                            <li><a  href="../BBA-SCM-Programme-Pamphlet/" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
+                            <li><a  href="../BBA-SCM-Experience-and-Opportunities/" title="Experience and Opportunities">Experience and Opportunities</a> </li>  
+                            <li><a  href="../BBA-SCM-Admission/" title="Admission" >Admission</a> </li>  
                                 
                         </ul>
                     </div>
@@ -91,8 +91,3 @@
 
  
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>

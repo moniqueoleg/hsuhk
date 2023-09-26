@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: BBA-SCM-Admission */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,15 +8,15 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b7.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b7.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="Programmes">Programmes</a>
                      <span>/</span>
-                     <a href="" title="Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)  ">Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01) </a>
+                     <a href="../BBA-SCM-Cover/" title="Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)  ">Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01) </a>
                      <span>/</span>
                      <a href="" title="Admission">Admission</a>
             </div>
@@ -33,12 +33,12 @@
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)">Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
                         <ul>         	        
-                            <li><a  href="#"  title="Programme Overview ">Programme Overview </a> </li>        
-                            <li><a  href="#" title="Career Prospects">Career Prospects</a> </li>  
-                            <li><a  href="#"  title="Professional Recognition" >Professional Recognition</a> </li>  
-                            <li><a  href="#" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
-                            <li><a  href="#"  title="Experience and Opportunities">Experience and Opportunities</a> </li>  
-                            <li><a  href="#" class="active"  title="Admission" >Admission</a> </li>  
+                            <li><a  href="../bba-scm-programme-overview/"title="Programme Overview ">Programme Overview </a> </li>        
+                            <li><a  href="../BBA-SCM-Career-Prospects/" title="Career Prospects">Career Prospects</a> </li>  
+                            <li><a  href="../BBA-SCM-Professional-Recognition/"  title="Professional Recognition" >Professional Recognition</a> </li>  
+                            <li><a  href="../BBA-SCM-Programme-Pamphlet/" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
+                            <li><a  href="../BBA-SCM-Experience-and-Opportunities/" title="Experience and Opportunities">Experience and Opportunities</a> </li>  
+                            <li><a  href="../BBA-SCM-Admission/" class="active"   title="Admission" >Admission</a> </li>  
                                 
                         </ul>
                     </div>
@@ -50,7 +50,7 @@
                         <div class="title fs28 white  wow fadeInUp" title="Admission">Admission</div>
                         <div class="txt fs18  wow fadeInUp">
                             <p>BBA-SCM Programme aims to provide students with a comprehensive and professional training in Supply Chain Management (SCM). Within the Programme, two study streams: the Business Logistics stream and the Air Transport stream are established, students will learn specialised knowledge and skills in Supply Chain and Logistics Management for their pursuit of professional career development. In addition, with the strong support from professional bodies and businesses, our students will keep abreast of the latest industry development and learn the state-of-art knowledge and skills about supply chain management.</p>
-                            <p><img src="static/images/ad.jpg" alt="images"></p>  
+                            <p><img src="<?=get_template_directory_uri()?>/static/images/ad.jpg" alt="images"></p>  
                         </div>
 
                         <div class="title fs28 mt-5 white  wow fadeInUp" title="Year 1 Entry">Year 1 Entry</div>
@@ -117,7 +117,7 @@
                    <div class="close"></div> 
                    <div class="row">
                        <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                           <div class='pic'><img src="static/images/sh1.jpg" alt="pic"></div>
+                           <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/sh1.jpg" alt="pic"></div>
                        </div>
                        <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                            <div class="fs32 bold blueText">Oscar Shek</div>
@@ -137,8 +137,3 @@
 
  
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>

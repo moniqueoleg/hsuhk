@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: BMSIM-ExperienceandOpportunities */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,17 +8,17 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b88.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b88.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="Programmes">Programmes</a>
                      <span>/</span>
-                     <a href="" title="Bachelor Degree">Bachelor Degree</a>
+                     <a href="../BMSIM-Cover/" title="Bachelor Degree">Bachelor Degree</a>
                      <span>/</span>
-                     <a href="" title="Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) ">Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</a>
+                     <a href="../BMSIM-Cover/" title="Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) ">Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</a>
                      <span>/</span>
                      <a href="" title="Experience and Opportunities">Experience and Opportunities</a>
             </div>
@@ -34,13 +34,13 @@
                     <h2 class="fs20 pc blueLight bold wow fadeInUp" title="Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)">Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</h2>
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)">Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
-                        <ul>         	        
-                            <li><a  href="#"  title="Programme Overview ">Programme Overview </a> </li>        
-                            <li><a  href="#" title="Career Prospects">Career Prospects</a> </li>  
-                            <li><a  href="#"  title="Professional Recognition" >Professional Recognition</a> </li>  
-                            <li><a  href="#" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
-                            <li><a  href="#" class="active"  title="Experience and Opportunities">Experience and Opportunities</a> </li>  
-                            <li><a  href="#" title="Admission" >Admission</a> </li>  
+                        <ul>
+                            <li><a  href="../bmsim-programme-overview/" title="Programme Overview ">Programme Overview </a> </li>        
+                            <li><a  href="../BMSIM-Career-Prospects/" title="Career Prospects">Career Prospects</a> </li>  
+                            <li><a  href="../BMSIM-Professional-Recognition/"  title="Professional Recognition" >Professional Recognition</a> </li>  
+                            <li><a  href="../BMSIM-Programme-Pamphlet/" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
+                            <li><a  href="../BMSIM-ExperienceandOpportunities/" class="active" title="Experience and Opportunities">Experience and Opportunities</a> </li>  
+                            <li><a  href="../BMSIM-Admission/" title="Admission" >Admission</a> </li>  
                                 
                         </ul>
                     </div>
@@ -76,7 +76,7 @@
                                 
                                     <div class="col-md-6  col-sm-12 col-xs-12 mb-3 wow fadeInUp">
                                         <a href="javascript:;">
-                                            <div class="imgs"><img src="static/images/shd.jpg" alt="pic"></div>
+                                            <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/shd.jpg" alt="pic"></div>
                                             <div class="right">
                                                 <h4 class="fs20 blueText bold">LI Cheong Kit, Ken</h4>
                                                 <p class="fs18">Deliveroo</p>
@@ -89,7 +89,7 @@
                                                     <div class="close"></div> 
                                                     <div class="row">
                                                         <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                            <div class='pic'><img src="static/images/sh8.jpg" alt="pic"></div>
+                                                            <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/sh8.jpg" alt="pic"></div>
                                                         </div>
                                                         <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                             <div class="fs32 bold blueText">Oscar Shek</div>
@@ -107,7 +107,7 @@
                                     </div>
                                     <div class="col-md-6  col-sm-12 col-xs-12 mb-3 wow fadeInUp">
                                         <a href="javascript:;">
-                                            <div class="imgs"><img src="static/images/shd.jpg" alt="pic"></div>
+                                            <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/shd.jpg" alt="pic"></div>
                                             <div class="right">
                                                 <h4 class="fs20 blueText bold">KWAN Ho Lam</h4>
                                                 <p class="fs18">AXA</p>
@@ -120,7 +120,7 @@
                                                     <div class="close"></div> 
                                                     <div class="row">
                                                         <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                            <div class='pic'><img src="static/images/sh8.jpg" alt="pic"></div>
+                                                            <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/sh8.jpg" alt="pic"></div>
                                                         </div>
                                                         <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                             <div class="fs32 bold blueText">Oscar Shek</div>
@@ -142,13 +142,13 @@
                             <div class="sdlist">
                                 <div class="row">
                                     <div class="col-md-4 col-sm-12 col-xs-12 mt-3 wow fadeInUp">
-                                        <div class="imgs"><img src="static/images/h.jpg" alt="pic"></div>
+                                        <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/h.jpg" alt="pic"></div>
                                     </div>
                                     <div class="col-md-4 col-sm-12 col-xs-12 mt-3 wow fadeInUp">
-                                        <div class="imgs"><img src="static/images/h.jpg" alt="pic"></div>
+                                        <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/h.jpg" alt="pic"></div>
                                     </div>
                                     <div class="col-md-4 col-sm-12 col-xs-12 mt-3 wow fadeInUp">
-                                        <div class="imgs"><img src="static/images/h.jpg" alt="pic"></div>
+                                        <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/h.jpg" alt="pic"></div>
                                     </div>
                                 </div>
                             </div>
@@ -163,13 +163,13 @@
                             <div class="sdlist">
                                 <div class="row">
                                     <div class="col-md-4 col-sm-12 col-xs-12 mt-3 wow fadeInUp">
-                                        <div class="imgs"><img src="static/images/4.jpg" alt="pic"></div>
+                                        <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/4.jpg" alt="pic"></div>
                                     </div>
                                     <div class="col-md-4 col-sm-12 col-xs-12 mt-3 wow fadeInUp">
-                                        <div class="imgs"><img src="static/images/5.jpg" alt="pic"></div>
+                                        <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/5.jpg" alt="pic"></div>
                                     </div>
                                     <div class="col-md-4 col-sm-12 col-xs-12 mt-3 wow fadeInUp">
-                                        <div class="imgs"><img src="static/images/6.jpg" alt="pic"></div>
+                                        <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/6.jpg" alt="pic"></div>
                                     </div>
                                 </div>
                             </div>
@@ -197,8 +197,3 @@
 
  
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>

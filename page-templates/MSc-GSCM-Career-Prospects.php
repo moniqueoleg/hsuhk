@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: MSc-GSCM-Career-Prospects */ ?> 
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,15 +8,15 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b6.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b6.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="Programmes">Programmes</a>
                      <span>/</span>
-                     <a href="" title="Master of Science in Global Supply Chain Management (MSc-GSCM) ">Master of Science in Global Supply Chain Management (MSc-GSCM)</a>
+                     <a href="../MSc-GSCM-Cover/" title="Master of Science in Global Supply Chain Management (MSc-GSCM) ">Master of Science in Global Supply Chain Management (MSc-GSCM)</a>
                      <span>/</span>
                      <a href="" title="Career Prospects">Career Prospects</a>
             </div>
@@ -33,12 +33,12 @@
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Master of Science in Global Supply Chain Management (MSc-GSCM)">Master of Science in Global Supply Chain Management (MSc-GSCM)</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
                         <ul>         	        
-                            <li><a  href="#"  title="Programme Overview ">Programme Overview </a> </li>        
-                            <li><a  href="#" title="Academic Structure">Academic Structure</a> </li>  
-                            <li><a  href="#" class="active"  title="Career Prospects" >Career Prospects</a> </li>  
-                            <li><a  href="#" title="Scholarship & Financial Aids">Scholarship & Financial Aids</a> </li>        
-                            <li><a  href="#" title="Graduate Sharing">Graduate Sharing</a> </li>  
-                            <li><a  href="#" title="Admission" >Admission</a> </li>  
+                            <li><a  href="../msc-gscm-programme-overview/"  title="Programme Overview ">Programme Overview </a> </li>        
+                            <li><a  href="../MSc-GSCM-Academic-Structure/" title="Academic Structure">Academic Structure</a> </li>  
+                            <li><a  href="../MSc-GSCM-Career-Prospects/"   class="active" title="Career Prospects" >Career Prospects</a> </li>  
+                            <li><a  href="../MSc-GSCM-Scholarships-FinancialAid/" title="Scholarship & Financial Aids">Scholarship & Financial Aids</a> </li>        
+                            <li><a  href="../MSc-GSCM-Graduate-Sharing/"   title="Graduate Sharing">Graduate Sharing</a> </li>  
+                            <li><a  href="../MSc-GSCM-Admission/"  title="Admission" >Admission</a> </li>  
                                 
                         </ul>
                     </div>
@@ -79,7 +79,7 @@
                                 <div class="row">
                                     <div class="col-md-6  col-sm-12 col-xs-12 mb-3 wow fadeInUp">
                                         <a href="javascript:;">
-                                            <div class="imgs"><img src="static/images/mf1.jpg" alt="pic"></div>
+                                            <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/mf1.jpg" alt="pic"></div>
                                             <div class="right">
                                                 <h4 class="fs20 blueText bold">Mr Ken Chung</h4>
                                                 <p class="fs18">Chairman, CHKLI</p>
@@ -92,7 +92,7 @@
                                                     <div class="close"></div> 
                                                     <div class="row">
                                                         <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                            <div class='pic'><img src="static/images/mf1.jpg" alt="pic"></div>
+                                                            <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/mf1.jpg" alt="pic"></div>
                                                         </div>
                                                         <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                             <div class="fs32 bold blueText">Oscar Shek</div>
@@ -110,7 +110,7 @@
                                     </div>
                                     <div class="col-md-6  col-sm-12 col-xs-12 mb-3 wow fadeInUp">
                                         <a href="javascript:;">
-                                            <div class="imgs"><img src="static/images/mf2.jpg" alt="pic"></div>
+                                            <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/mf2.jpg" alt="pic"></div>
                                             <div class="right">
                                                 <h4 class="fs20 blueText bold">Dr Rocky Lam</h4>
                                                 <p class="fs18">Business Director, Vantis Consulting Group</p>
@@ -123,7 +123,7 @@
                                                     <div class="close"></div> 
                                                     <div class="row">
                                                         <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                            <div class='pic'><img src="static/images/mf2.jpg" alt="pic"></div>
+                                                            <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/mf2.jpg" alt="pic"></div>
                                                         </div>
                                                         <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                             <div class="fs32 bold blueText">Oscar Shek</div>
@@ -141,7 +141,7 @@
                                     </div>
                                     <div class="col-md-6  col-sm-12 col-xs-12 mb-3 wow fadeInUp">
                                         <a href="javascript:;">
-                                            <div class="imgs"><img src="static/images/mf3.jpg" alt="pic"></div>
+                                            <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/mf3.jpg" alt="pic"></div>
                                             <div class="right">
                                                 <h4 class="fs20 blueText bold">Mr Gary Ng</h4>
                                                 <p class="fs18">Managing Director,Shun Hing Technology Company Limited</p>
@@ -154,7 +154,7 @@
                                                     <div class="close"></div> 
                                                     <div class="row">
                                                         <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                            <div class='pic'><img src="static/images/mf3.jpg" alt="pic"></div>
+                                                            <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/mf3.jpg" alt="pic"></div>
                                                         </div>
                                                         <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                             <div class="fs32 bold blueText">Oscar Shek</div>
@@ -191,8 +191,3 @@
     </section>
 
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>

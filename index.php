@@ -95,12 +95,8 @@
                </div>
               
            </div>
-
        </div>
-          
-
-
-            
+       
     </section>
     <section class="third-block  mt-lg-4 py-5 wow fadeInUp" >
        <div class="container">
@@ -203,17 +199,9 @@
               
            </div>
 
-       </div>
-          
-
-
+       </div>     
             
     </section>
-
-   
- 
-
-
 
  
 </main>

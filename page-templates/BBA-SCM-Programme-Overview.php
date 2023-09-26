@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: bba-scm-programme-overview */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,15 +8,15 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b7.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b7.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="Programmes">Programmes</a>
                      <span>/</span>
-                     <a href="" title="Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)   ">Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)  </a>
+                     <a href="../BBA-SCM-Cover/" title="Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)   ">Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)  </a>
                      <span>/</span>
                      <a href="" title="Programme Overview">Programme Overview </a>
             </div>
@@ -33,12 +33,12 @@
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01) ">Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01) </h2>
                     <div class="menu-box mt-3 wow fadeInUp">
                         <ul>         	        
-                            <li><a  href="#" class="active" title="Programme Overview ">Programme Overview </a> </li>        
-                            <li><a  href="#" title="Career Prospects">Career Prospects</a> </li>  
-                            <li><a  href="#"  title="Professional Recognition" >Professional Recognition</a> </li>  
-                            <li><a  href="#" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
-                            <li><a  href="#" title="Experience and Opportunities">Experience and Opportunities</a> </li>  
-                            <li><a  href="#" title="Admission" >Admission</a> </li>  
+                            <li><a  href="../bba-scm-programme-overview/" class="active" title="Programme Overview ">Programme Overview </a> </li>        
+                            <li><a  href="../BBA-SCM-Career-Prospects/" title="Career Prospects">Career Prospects</a> </li>  
+                            <li><a  href="../BBA-SCM-Professional-Recognition/"  title="Professional Recognition" >Professional Recognition</a> </li>  
+                            <li><a  href="../BBA-SCM-Programme-Pamphlet/" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
+                            <li><a  href="../BBA-SCM-Experience-and-Opportunities/" title="Experience and Opportunities">Experience and Opportunities</a> </li>  
+                            <li><a  href="../BBA-SCM-Admission/" title="Admission" >Admission</a> </li>  
                                 
                         </ul>
                     </div>
@@ -59,7 +59,7 @@
                                                     <p>This is a four-year degree programme. Within the BBA-SCM Programme, two broad study pathways are envisaged. The first is designed for students who wish to prepare themselves for further studies in SCM or logistic-related disciplines, and the second is for those who wish to be trained for the workplace at professional level. Both pathways provide an opportunity for students to develop a sound foundation in business and supply chain management. In addition, with the strong support from professional bodies and businesses, our students will keep abreast of the latest industry development and learn the state-of-art knowledge and skills in supply chain management.  </p>
                                                 </div>
                                                 <div class="col-md-3 col-sm-12 col-xs-12">
-                                                    <a href="" alt="images"><img src="static/images/ads.jpg" width="100%"></a>
+                                                    <a href="" alt="images"><img src="<?=get_template_directory_uri()?>/static/images/ads.jpg" width="100%"></a>
                                                 </div>
                                             </div>
                                             <em>Remark: QR Registration No.: 18/000845/L5<br/>Registration Validity Period: 08/11/2018 to 31/08/2026<br/>Level: 5</em>
@@ -76,10 +76,10 @@
                                             <div class="sdlist mb-4">
                                                 <div class="row">
                                                     <div class="col-md-4 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                                                        <div class="imgs"><img src="static/images/iq1.jpg" alt="pic"></div>
+                                                        <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/iq1.jpg" alt="pic"></div>
                                                     </div>
                                                     <div class="col-md-4 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                                                        <div class="imgs"><img src="static/images/iq2.jpg" alt="pic"></div>
+                                                        <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/iq2.jpg" alt="pic"></div>
                                                     </div>
                                           
                                                 </div>
@@ -89,7 +89,7 @@
                                             <div class="sdlist">
                                                 <div class="row">
                                                     <div class="col-md-4 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                                                        <div class="imgs"><img src="static/images/iq3.jpg" alt="pic"></div>
+                                                        <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/iq3.jpg" alt="pic"></div>
                                                     </div>
                                            
                                           
@@ -343,29 +343,10 @@
                             </div>
                             
                         </div>
-
-                  
-            
-                
                     </div>
                </div>
            </div>
 
        </div>
-    
-          
-
-
-            
     </section>
-
-
-
-
- 
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>

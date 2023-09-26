@@ -1,26 +1,23 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: external-funded-project */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
             <div class="container">
-                <h1 class="fs36 blueLight bold wow fadeInUp" title="External Funded Project ">External Funded Project </h1>
-              
+                <h1 class="fs36 blueLight bold wow fadeInUp" title="External Funded Project ">External Funded Project </h1>              
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b2.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b2.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
-                     <a href="" title="Research">Research</a>
+                     <a href="../research-profile" title="Research">Research</a>
                      <span>/</span>
                      <a href="" title="External Funded Project ">External Funded Project </a>
             </div>
     </div>
-
-
   
     <section class="index-block wow fadeInUp" >
        <div class="container">
@@ -31,8 +28,8 @@
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Research">Research</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
                         <ul>         	        
-                            <li><a  href="#" title="Research Profile" >Research Profile</a> </li>        
-                            <li><a class="active"  href="#" title="External Funded Project " >External Funded Project </a> </li>      
+                            <li><a  href="../research-profile/" title="Research Profile" >Research Profile</a> </li>        
+                            <li><a  href="../external-funded-project/" class="active" title="External Funded Project " >External Funded Project </a> </li>      
              
                         </ul>
                     </div>
@@ -196,6 +193,4 @@
 
  
 </main>
-<?php require_once "footer.php"; ?>
-</body>
-</html>
+

@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: News */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,15 +8,15 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b10.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b10.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
-                     <a href="" title="News & Events">News & Events</a>
+                     <a href="../News/" title="News & Events">News & Events</a>
                      <span>/</span>
-                     <a href="" title="News">News</a>
+                     <a href="../News/" title="News">News</a>
             </div>
     </div>
 
@@ -31,9 +31,8 @@
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="News & Events">News & Events</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
                         <ul>         	        
-                            <li><a  href="#" class="active" title="News" >News</a> </li>        
-                            <li><a  href="#" title="Events">Events</a> </li>   
-                                
+                            <li><a  href="../news" class="active" title="News" >News</a> </li>        
+                            <li><a  href="../events" title="Events">Events</a> </li>                                
                         </ul>
                     </div>
                </div>
@@ -43,13 +42,13 @@
                     <div class="news">
                             <div class="row">
                                 <div class='col-md-6 col-sm-12 col-xs-12 mb-4 wow fadeInUp'>
-                                        <a href="">
+                                        <a href="../news_inner/">
                                             <div class="date">
                                                 <strong class="day fs42">09</strong>
                                                 <em class="year">May, 2023</em>
                                             </div>
                                             <div class="boximg">
-                                            <img src="static/images/ss1.jpg" alt="news">
+                                            <img src="<?=get_template_directory_uri()?>/static/images/ss1.jpg" alt="news">
                                             
                                             </div>
                                             <div class="con fs20">
@@ -58,13 +57,13 @@
                                         </a>
                                 </div>
                                 <div class='col-md-6 col-sm-12 col-xs-12 mb-4 wow fadeInUp'>
-                                        <a href="">
+                                        <a href="../news_inner/">
                                             <div class="date">
                                                 <strong class="day fs42">29</strong>
                                                 <em class="year">May, 2023</em>
                                             </div>
                                             <div class="boximg">
-                                            <img src="static/images/ss2.jpg" alt="news">
+                                            <img src="<?=get_template_directory_uri()?>/static/images/ss2.jpg" alt="news">
                                             
                                             </div>
                                             <div class="con fs20">
@@ -73,13 +72,13 @@
                                         </a>
                                 </div>
                                 <div class='col-md-6 col-sm-12 col-xs-12 mb-4 wow fadeInUp'> 
-                                        <a href="">
+                                        <a href="../news_inner/">
                                             <div class="date">
                                                 <strong class="day fs42">21</strong>
                                                 <em class="year">May, 2023</em>
                                             </div>
                                             <div class="boximg">
-                                            <img src="static/images/ss3.jpg" alt="news">
+                                            <img src="<?=get_template_directory_uri()?>/static/images/ss3.jpg" alt="news">
                                             
                                             </div>
                                             <div class="con fs20">
@@ -88,13 +87,13 @@
                                         </a>
                                 </div>
                                 <div class='col-md-6 col-sm-12 col-xs-12 mb-4 wow fadeInUp'>
-                                        <a href="">
+                                        <a href="../news_inner/">
                                             <div class="date">
                                                 <strong class="day fs42">17</strong>
                                                 <em class="year">May, 2023</em>
                                             </div>
                                             <div class="boximg">
-                                            <img src="static/images/ss4.jpg" alt="news">
+                                            <img src="<?=get_template_directory_uri()?>/static/images/ss4.jpg" alt="news">
                                             
                                             </div>
                                             <div class="con fs20">
@@ -103,13 +102,13 @@
                                         </a>
                                 </div>
                                 <div class='col-md-6 col-sm-12 col-xs-12 mb-4 wow fadeInUp'> 
-                                        <a href="">
+                                        <a href="../news_inner/">
                                             <div class="date">
                                                 <strong class="day fs42">07</strong>
                                                 <em class="year">May, 2023</em>
                                             </div>
                                             <div class="boximg">
-                                            <img src="static/images/ss5.jpg" alt="news">
+                                            <img src="<?=get_template_directory_uri()?>/static/images/ss5.jpg" alt="news">
                                             
                                             </div>
                                             <div class="con fs20">
@@ -118,13 +117,13 @@
                                         </a>
                                 </div>
                                 <div class='col-md-6 col-sm-12 col-xs-12 mb-4 wow fadeInUp'> 
-                                        <a href="">
+                                        <a href="../news_inner/">
                                             <div class="date">
                                                 <strong class="day fs42">18</strong>
                                                 <em class="year">May, 2023</em>
                                             </div>
                                             <div class="boximg">
-                                            <img src="static/images/ss6.jpg" alt="news">
+                                            <img src="<?=get_template_directory_uri()?>/static/images/ss6.jpg" alt="news">
                                             
                                             </div>
                                             <div class="con fs20">
@@ -134,13 +133,13 @@
                                 </div>
 
                                 <div class='col-md-6 col-sm-12 col-xs-12 mb-4 wow fadeInUp'> 
-                                        <a href="">
+                                        <a href="../news_inner/">
                                             <div class="date">
                                                 <strong class="day fs42">03</strong>
                                                 <em class="year">May, 2023</em>
                                             </div>
                                             <div class="boximg">
-                                            <img src="static/images/ss7.jpg" alt="news">
+                                            <img src="<?=get_template_directory_uri()?>/static/images/ss7.jpg" alt="news">
                                             
                                             </div>
                                             <div class="con fs20">
@@ -149,13 +148,13 @@
                                         </a>
                                 </div>
                                 <div class='col-md-6 col-sm-12 col-xs-12 mb-4 wow fadeInUp'> 
-                                        <a href="">
+                                        <a href="../news_inner/">
                                             <div class="date">
                                                 <strong class="day fs42">06</strong>
                                                 <em class="year">May, 2023</em>
                                             </div>
                                             <div class="boximg">
-                                            <img src="static/images/ss8.jpg" alt="news">
+                                            <img src="<?=get_template_directory_uri()?>/static/images/ss8.jpg" alt="news">
                                             
                                             </div>
                                             <div class="con fs20">
@@ -175,32 +174,10 @@
                                 </ul>
                             </div>
                         </div>
-                  
-                        
-                    
-                  
-            
-                
                     </div>
                </div>
            </div>
 
        </div>
-    
-          
-
-
-            
     </section>
-
- 
-
-
-
- 
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>

@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: Research Profile */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,11 +8,11 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b2.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b2.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="Research">Research</a>
                      <span>/</span>
@@ -31,8 +31,8 @@
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Research">Research</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
                         <ul>         	        
-                            <li><a  href="#" class="active" title="Research Profile" >Research Profile</a> </li>        
-                            <li><a  href="#" title="External Funded Project " >External Funded Project </a> </li>      
+                            <li><a  href="../research-profile/" class="active" title="Research Profile" >Research Profile</a> </li>        
+                            <li><a  href="../external-funded-project/" title="External Funded Project " >External Funded Project </a> </li>      
              
                         </ul>
                     </div>
@@ -182,6 +182,4 @@
 
  
 </main>
-<?php require_once "footer.php"; ?>
-</body>
-</html>
+

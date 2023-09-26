@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: Events */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,19 +8,17 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b5.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b5.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
-                     <span>/</span>
-                     <a href="" title="News & Events">News & Events</a>
-                     <span>/</span>
-                     <a href="" title="Events">Events</a>
+                <a href="../" title="Home">Home</a>   
+                <span>/</span>
+                <a href="../news/" title="News & Events">News & Events</a>
+                <span>/</span>
+                <a href="../events/" title="Events">Events</a>
             </div>
     </div>
-
-
   
     <section class="index-block wow fadeInUp" >
        <div class="container">
@@ -31,8 +29,8 @@
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="News & Events">News & Events</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
                         <ul>         	        
-                            <li><a  href="#"  title="News" >News</a> </li>        
-                            <li><a  href="#" class="active" title="Events">Events</a> </li>   
+                            <li><a  href="../news/"  title="News" >News</a> </li>        
+                            <li><a  href="../events/" class="active" title="Events">Events</a> </li>   
                                 
                         </ul>
                     </div>
@@ -44,7 +42,7 @@
                             <div class="evlist">
                               <div class="items">  
                                 <a href="javascript:;">
-                                    <div class="boximg"><img src="static/images/ev1.jpg"></div>
+                                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/ev1.jpg"></div>
                                     <div class="conbox">
                                         <h5 class="tit fs20">Career Talk by General Manager, Procurement of the Airport Authority - Hong Kong International Airport</h5>
                                         <em class="date">2023/04/25</em>
@@ -66,7 +64,7 @@
                                                 <div class="close"></div> 
                                                 <div class="row">
                                                     <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                        <div class='pic'><img src="static/images/ev1.jpg" alt="pic"></div>
+                                                        <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/ev1.jpg" alt="pic"></div>
                                                     </div>
                                                     <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                         <div class="fs24 bold blueLight">Career Talk by General Manager, Procurement of the Airport Authority - Hong Kong International Airport</div>
@@ -88,7 +86,7 @@
                               </div>
                               <div class="items">  
                                 <a href="javascript:;">
-                                    <div class="boximg"><img src="static/images/ev2.jpg"></div>
+                                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/ev2.jpg"></div>
                                     <div class="conbox">
                                         <h5 class="tit fs20">Jardine Aviation Services - Career Talk on Summer Internship & Graduate Job 2023</h5>
                                         <em class="date">2023/04/20</em>
@@ -107,7 +105,7 @@
                                                 <div class="close"></div> 
                                                 <div class="row">
                                                     <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                        <div class='pic'><img src="static/images/ev1.jpg" alt="pic"></div>
+                                                        <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/ev1.jpg" alt="pic"></div>
                                                     </div>
                                                     <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                         <div class="fs24 bold blueLight">Career Talk by General Manager, Procurement of the Airport Authority - Hong Kong International Airport</div>
@@ -130,7 +128,7 @@
                               <div class="items">  
 
                                 <a href="javascript:;">
-                                    <div class="boximg"><img src="static/images/ev3.jpg"></div>
+                                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/ev3.jpg"></div>
                                     <div class="conbox">
                                         <h5 class="tit fs20">GSCM Leadership Talk Series - Leading through managing risk</h5>
                                         <em class="date">2023/03/23</em>
@@ -149,7 +147,7 @@
                                                 <div class="close"></div> 
                                                 <div class="row">
                                                     <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                        <div class='pic'><img src="static/images/ev1.jpg" alt="pic"></div>
+                                                        <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/ev1.jpg" alt="pic"></div>
                                                     </div>
                                                     <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                         <div class="fs24 bold blueLight">Career Talk by General Manager, Procurement of the Airport Authority - Hong Kong International Airport</div>
@@ -171,7 +169,7 @@
                               </div>
                               <div class="items"> 
                                 <a href="javascript:;">
-                                    <div class="boximg"><img src="static/images/ev1.jpg"></div>
+                                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/ev1.jpg"></div>
                                     <div class="conbox">
                                         <h5 class="tit fs20">Career Talk by General Manager, Procurement of the Airport Authority - Hong Kong International Airport</h5>
                                         <em class="date">2023/04/25</em>
@@ -192,7 +190,7 @@
                                                 <div class="close"></div> 
                                                 <div class="row">
                                                     <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                        <div class='pic'><img src="static/images/ev1.jpg" alt="pic"></div>
+                                                        <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/ev1.jpg" alt="pic"></div>
                                                     </div>
                                                     <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                         <div class="fs24 bold blueLight">Career Talk by General Manager, Procurement of the Airport Authority - Hong Kong International Airport</div>
@@ -214,7 +212,7 @@
                               </div>
                               <div class="items"> 
                                 <a href="javascript:;">
-                                    <div class="boximg"><img src="static/images/ev2.jpg"></div>
+                                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/ev2.jpg"></div>
                                     <div class="conbox">
                                         <h5 class="tit fs20">Jardine Aviation Services - Career Talk on Summer Internship & Graduate Job 2023</h5>
                                         <em class="date">2023/04/20</em>
@@ -233,7 +231,7 @@
                                                 <div class="close"></div> 
                                                 <div class="row">
                                                     <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                        <div class='pic'><img src="static/images/ev1.jpg" alt="pic"></div>
+                                                        <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/ev1.jpg" alt="pic"></div>
                                                     </div>
                                                     <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                         <div class="fs24 bold blueLight">Career Talk by General Manager, Procurement of the Airport Authority - Hong Kong International Airport</div>
@@ -255,7 +253,7 @@
                               </div>
                               <div class="items"> 
                                 <a href="javascript:;">
-                                    <div class="boximg"><img src="static/images/ev3.jpg"></div>
+                                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/ev3.jpg"></div>
                                     <div class="conbox">
                                         <h5 class="tit fs20">GSCM Leadership Talk Series - Leading through managing risk</h5>
                                         <em class="date">2023/03/23</em>
@@ -274,7 +272,7 @@
                                                 <div class="close"></div> 
                                                 <div class="row">
                                                     <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                        <div class='pic'><img src="static/images/ev1.jpg" alt="pic"></div>
+                                                        <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/ev1.jpg" alt="pic"></div>
                                                     </div>
                                                     <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                         <div class="fs24 bold blueLight">Career Talk by General Manager, Procurement of the Airport Authority - Hong Kong International Airport</div>
@@ -307,31 +305,9 @@
                                 </ul>
                             </div>
                         </div>
-                        
-                    
-                  
-            
-                
                     </div>
                </div>
            </div>
-
        </div>
-    
-          
-
-
-            
     </section>
-    
- 
-
-
-
- 
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>

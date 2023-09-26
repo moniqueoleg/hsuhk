@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: faculty */ ?>
 <main>
     <section class="page-banner position-relative wow fadeInUp">
         <div class="inner">
@@ -8,21 +8,19 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b1.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b1.jpg" alt="images"></div>
         <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
-                     <a href="" title="About Us">About Us</a>
+                     <a href="../overview/" title="About Us">About Us</a>
                      <span>/</span>
                      <a href="" title="Faculty">Faculty</a>
         
             </div>
         </div>
     </section>
-
-
-  
+      
     <section class="index-block py-5 wow fadeInUp" >
        <div class="container">
            <div class="row">
@@ -31,11 +29,12 @@
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="About Us">About Us</h2>
                     <div class='htmleaf-container wow fadeInUp'>
                         <div class="menu-box htmleaf-content bgcolor-3  ">
-                            <ul class="mtree bubba">         
-                                <li><a  href="#" title="Overview">Overview</a></li>						                  	        
-                                <li><a  href="/"  class="active" title="Faculty">Faculty</a> </li>        
-                                <li><a  href="/" title="Contact Us">Contact Us</a> </li>                     
+                            <ul class="mtree bubba">         	        
+                                <li><a  href="../overview/"  title="Overview">Overview</a> </li>        
+                                <li><a  href="../faculty/" class="active"  title="Staff">Faculty</a> </li>  
+                                <li><a  href="../contact-us/"  title="Contact Us" >Contact Us</a> </li>                                  
                             </ul>
+                            
                         </div>
                     </div>
                </div>
@@ -59,232 +58,206 @@
                                 <div class="tab-pane fade show active">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="About-Us-Faculty–inner.php" class="border">
+                                            <a href="../faculty-ineer/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
                                                     <div class="con fs18">
                                                         <ul>
-                                                            <li><img src="static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></li>
-                                                            <li><img src="static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></li>
-                                                            <li><img src="static/images/door.svg" alt="icos"><span>Office : D612</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : D612</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="boximg"><img src="static/images/sta1.jpg"></div>
+                                                <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/sta1.jpg"></div>
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="About-Us-Faculty–inner.php" class="border">
+                                            <a href="../faculty-ineer/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
                                                     <div class="con fs18">
                                                         <ul>
-                                                            <li><img src="static/images/mail.svg" alt="icos"><span>Email: ychen@hsu.edu.hk</span></li>
-                                                            <li><img src="static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5644</span></li>
-                                                            <li><img src="static/images/door.svg" alt="icos"><span>Office : D623</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: ychen@hsu.edu.hk</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5644</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : D623</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="boximg"><img src="static/images/sta2.jpg"></div>
+                                                <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/sta2.jpg"></div>
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="About-Us-Faculty–inner.php" class="border">
+                                            <a href="../faculty-ineer/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
                                                     <div class="con fs18">
                                                         <ul>
-                                                            <li><img src="static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></li>
-                                                            <li><img src="static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></li>
-                                                            <li><img src="static/images/door.svg" alt="icos"><span>Office : D612</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : D612</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="boximg"><img src="static/images/sta1.jpg"></div>
+                                                <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/sta1.jpg"></div>
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="About-Us-Faculty–inner.php" class="border">
+                                            <a href="../faculty-ineer/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
                                                     <div class="con fs18">
                                                         <ul>
-                                                            <li><img src="static/images/mail.svg" alt="icos"><span>Email: ychen@hsu.edu.hk</span></li>
-                                                            <li><img src="static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5644</span></li>
-                                                            <li><img src="static/images/door.svg" alt="icos"><span>Office : D623</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: ychen@hsu.edu.hk</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5644</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : D623</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="boximg"><img src="static/images/sta2.jpg"></div>
+                                                <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/sta2.jpg"></div>
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="About-Us-Faculty–inner.php" class="border">
+                                            <a href="../faculty-ineer/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
                                                     <div class="con fs18">
                                                         <ul>
-                                                            <li><img src="static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></li>
-                                                            <li><img src="static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></li>
-                                                            <li><img src="static/images/door.svg" alt="icos"><span>Office : D612</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : D612</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="boximg"><img src="static/images/sta1.jpg"></div>
+                                                <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/sta1.jpg"></div>
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="About-Us-Faculty–inner.php" class="border">
+                                            <a href="../faculty-ineer/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
                                                     <div class="con fs18">
                                                         <ul>
-                                                            <li><img src="static/images/mail.svg" alt="icos"><span>Email: ychen@hsu.edu.hk</span></li>
-                                                            <li><img src="static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5644</span></li>
-                                                            <li><img src="static/images/door.svg" alt="icos"><span>Office : D623</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: ychen@hsu.edu.hk</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5644</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : D623</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="boximg"><img src="static/images/sta2.jpg"></div>
+                                                <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/sta2.jpg"></div>
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="About-Us-Faculty–inner.php" class="border">
+                                            <a href="../faculty-ineer/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
                                                     <div class="con fs18">
                                                         <ul>
-                                                            <li><img src="static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></li>
-                                                            <li><img src="static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></li>
-                                                            <li><img src="static/images/door.svg" alt="icos"><span>Office : D612</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : D612</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="boximg"><img src="static/images/sta1.jpg"></div>
+                                                <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/sta1.jpg"></div>
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="About-Us-Faculty–inner.php" class="border">
+                                            <a href="../faculty-ineer/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
                                                     <div class="con fs18">
                                                         <ul>
-                                                            <li><img src="static/images/mail.svg" alt="icos"><span>Email: ychen@hsu.edu.hk</span></li>
-                                                            <li><img src="static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5644</span></li>
-                                                            <li><img src="static/images/door.svg" alt="icos"><span>Office : D623</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: ychen@hsu.edu.hk</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5644</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : D623</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="boximg"><img src="static/images/sta2.jpg"></div>
+                                                <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/sta2.jpg"></div>
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="About-Us-Faculty–inner.php" class="border">
+                                            <a href="../faculty-ineer/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
                                                     <div class="con fs18">
                                                         <ul>
-                                                            <li><img src="static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></li>
-                                                            <li><img src="static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></li>
-                                                            <li><img src="static/images/door.svg" alt="icos"><span>Office : D612</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : D612</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="boximg"><img src="static/images/sta1.jpg"></div>
+                                                <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/sta1.jpg"></div>
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="About-Us-Faculty–inner.php" class="border">
+                                            <a href="../faculty-ineer/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
                                                     <div class="con fs18">
                                                         <ul>
-                                                            <li><img src="static/images/mail.svg" alt="icos"><span>Email: ychen@hsu.edu.hk</span></li>
-                                                            <li><img src="static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5644</span></li>
-                                                            <li><img src="static/images/door.svg" alt="icos"><span>Office : D623</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: ychen@hsu.edu.hk</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5644</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : D623</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="boximg"><img src="static/images/sta2.jpg"></div>
+                                                <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/sta2.jpg"></div>
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="About-Us-Faculty–inner.php" class="border">
+                                            <a href="../faculty-ineer/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
                                                     <div class="con fs18">
                                                         <ul>
-                                                            <li><img src="static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></li>
-                                                            <li><img src="static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></li>
-                                                            <li><img src="static/images/door.svg" alt="icos"><span>Office : D612</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: lleung@hsu.edu.hk</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5371</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : D612</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="boximg"><img src="static/images/sta1.jpg"></div>
+                                                <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/sta1.jpg"></div>
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="About-Us-Faculty–inner.php" class="border">
+                                            <a href="../faculty-ineer/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
                                                     <div class="con fs18">
                                                         <ul>
-                                                            <li><img src="static/images/mail.svg" alt="icos"><span>Email: ychen@hsu.edu.hk</span></li>
-                                                            <li><img src="static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5644</span></li>
-                                                            <li><img src="static/images/door.svg" alt="icos"><span>Office : D623</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: ychen@hsu.edu.hk</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: (852) 3963 5644</span></li>
+                                                            <li><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : D623</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="boximg"><img src="static/images/sta2.jpg"></div>
+                                                <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/sta2.jpg"></div>
                                             </a>
                                         </div>
                                      
                                     </div>
                                 </div>
-                          
-                        
+                                                  
                             </div>
                         </div>
-                  
-        
-                   
-             
-                   
-        
-
-                
                     </div>
                </div>
            </div>
-
        </div>
-          
-
-
-            
     </section>
-
-   
- 
-
-
-
- 
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>

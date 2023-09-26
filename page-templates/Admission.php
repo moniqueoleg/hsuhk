@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: Admission */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,11 +8,11 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b9.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b9.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="Admission">Admission</a>
             </div>
@@ -50,7 +50,7 @@
                                             <p>For Local Applicants, please apply via JUPAS. JUPAS Catalogue No. : JSSH01</p>
                                             <h5>Year 3 Entry</h5>
                                             <p>Apply Now: <a href="">HERE</a></p>
-                                            <img src="static/images/ads.jpg" alt="images">
+                                            <img src="<?=get_template_directory_uri()?>/static/images/ads.jpg" alt="images">
                                         </div>
                                     </li>
                                     <li class="li li2 wow fadeInUp">
@@ -61,7 +61,7 @@
                                             <p>For Local Applicants, please apply via JUPAS. JUPAS Catalogue No. : JSSH01</p>
                                             <h5>Year 3 Entry</h5>
                                             <p>Apply Now: <a href="">HERE</a></p>
-                                            <img src="static/images/ads.jpg" alt="images">
+                                            <img src="<?=get_template_directory_uri()?>/static/images/ads.jpg" alt="images">
                                         </div>
                                     </li>
                                     <li class="li li2 wow fadeInUp">
@@ -72,7 +72,7 @@
                                             <p>For Local Applicants, please apply via JUPAS. JUPAS Catalogue No. : JSSH01</p>
                                             <h5>Year 3 Entry</h5>
                                             <p>Apply Now: <a href="">HERE</a></p>
-                                            <img src="static/images/ads.jpg" alt="images">
+                                            <img src="<?=get_template_directory_uri()?>/static/images/ads.jpg" alt="images">
                                         </div>
                                     </li>
                                 
@@ -80,16 +80,7 @@
 
                                 </ul>
                             </div>
-                  
-
-                          
                         </div>
-                 
-                      
-               
-                  
-            
-                
                     </div>
                </div>
            </div>
@@ -108,6 +99,4 @@
 
  
 </main>
-<?php require_once "footer.php"; ?>
-</body>
-</html>
+

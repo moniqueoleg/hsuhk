@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: mentorship */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,19 +8,17 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b2.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b2.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
-                     <a href="" title="Teaching & Learning">Teaching & Learning</a>
+                     <a href="../why-choose-our-programmes/" title="Teaching & Learning">Teaching & Learning</a>
                      <span>/</span>
                      <a href="" title="Mentorship">Mentorship</a>
             </div>
     </div>
-
-
   
     <section class="index-block wow fadeInUp" >
        <div class="container">
@@ -30,12 +28,12 @@
                     <h2 class="fs20 pc blueLight bold wow fadeInUp" title="Teaching & Learning">Teaching & Learning</h2>
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Teaching & Learning">Teaching & Learning</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
-                        <ul>         	        
-                            <li><a  href="#" title="Why Choose Our Programmes?" >Why Choose Our Programmes?</a> </li>        
-                            <li><a  href="#" title="Facilities" >Facilities</a> </li>  
-                            <li><a  href="#" class="active" title="Professional Recognition" >Mentorship </a> </li>  
-                            <li><a  href="#" title="Scholarships & Financial Aid">Scholarships & Financial Aid</a> </li>        
-             
+                    <ul>         	        
+                            <li><a  href="../why-choose-our-programmes/"title="Why Choose Our Programmes?">Why Choose Our Programmes?</a> </li>        
+                            <li><a  href="../facilities/" title="Facilities">Facilities</a> </li>  
+                            <li><a  href="../Mentorship/" class="active"   title="Mentorship " >Mentorship </a> </li>  
+                            <li><a  href="../scholarships-financial-aid/"  title="Scholarships & Financial Aid">Scholarships & Financial Aid</a> </li>        
+                              
                         </ul>
                     </div>
                 </div>
@@ -160,8 +158,8 @@
                             <div id="certify" class="mt-5">
                                 <div class="swiper-container">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><img src="static/images/certify01.jpg" /><p>2022-23 SCM mentorship scheme</p></div>
-                                        <div class="swiper-slide"><img src="static/images/certify02.jpg" /><p>The mentors shared their experience with our students in the meeting</p></div>
+                                        <div class="swiper-slide"><img src="<?=get_template_directory_uri()?>/static/images/certify01.jpg" /><p>2022-23 SCM mentorship scheme</p></div>
+                                        <div class="swiper-slide"><img src="<?=get_template_directory_uri()?>/static/images/certify02.jpg" /><p>The mentors shared their experience with our students in the meeting</p></div>
                                     </div>
                                 </div>
                                 <div class="swiper-pagination"></div>
@@ -193,6 +191,4 @@
 
  
 </main>
-<?php require_once "footer.php"; ?>
-</body>
-</html>
+

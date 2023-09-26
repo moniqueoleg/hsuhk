@@ -1,4 +1,4 @@
-<?php require_once "header.php"; ?>
+<?php /* Template Name: BBA-SCM-Career-Prospects */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,15 +8,15 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="static/images/b7.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b7.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="" title="Home">Home</a>   
+                     <a href="../" title="Home">Home</a>   
                      <span>/</span>
                      <a href="" title="Programmes">Programmes</a>
                      <span>/</span>
-                     <a href="" title=" Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) "> Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</a>
+                     <a href="../BBA-SCM-Cover/" title=" Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) "> Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</a>
                      <span>/</span>
                      <a href="" title="Career Prospects">Career Prospects</a>
             </div>
@@ -33,12 +33,12 @@
                      <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)">Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM) Programme (JUPAS Code: JSSH01)</h2>
                      <div class="menu-box mt-3 wow fadeInUp">
                         <ul>         	        
-                            <li><a  href="#"  title="Programme Overview ">Programme Overview </a> </li>        
-                            <li><a  href="#" class="active" title="Career Prospects">Career Prospects</a> </li>  
-                            <li><a  href="#"  title="Professional Recognition" >Professional Recognition</a> </li>  
-                            <li><a  href="#" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
-                            <li><a  href="#" title="Experience and Opportunities">Experience and Opportunities</a> </li>  
-                            <li><a  href="#" title="Admission" >Admission</a> </li>  
+                            <li><a  href="../bba-scm-programme-overview/"title="Programme Overview ">Programme Overview </a> </li>        
+                            <li><a  href="../BBA-SCM-Career-Prospects/" class="active"  title="Career Prospects">Career Prospects</a> </li>  
+                            <li><a  href="../BBA-SCM-Professional-Recognition/"  title="Professional Recognition" >Professional Recognition</a> </li>  
+                            <li><a  href="../BBA-SCM-Programme-Pamphlet/" title="Programme Pamphlet">Programme Pamphlet</a> </li>        
+                            <li><a  href="../BBA-SCM-Experience-and-Opportunities/" title="Experience and Opportunities">Experience and Opportunities</a> </li>  
+                            <li><a  href="../BBA-SCM-Admission/" title="Admission" >Admission</a> </li>  
                                 
                         </ul>
                     </div>
@@ -72,7 +72,7 @@
                                 <div class="row">
                                     <div class="col-md-6  col-sm-12 col-xs-12 mb-3 wow fadeInUp">
                                         <a href="javascript:;">
-                                            <div class="imgs"><img src="static/images/sh1.jpg" alt="pic"></div>
+                                            <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/sh1.jpg" alt="pic"></div>
                                             <div class="right">
                                                 <h4 class="fs20 blueText bold">Oscar Shek</h4>
                                                 <p class="fs18">Global Operations Associate, Flexport 2017 Graduate Bachelor of Business Administration (Honours) in Supply Chain Management</p>
@@ -85,7 +85,7 @@
                                                     <div class="close"></div> 
                                                     <div class="row">
                                                         <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                            <div class='pic'><img src="static/images/sh1.jpg" alt="pic"></div>
+                                                            <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/sh1.jpg" alt="pic"></div>
                                                         </div>
                                                         <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                             <div class="fs32 bold blueText">Oscar Shek</div>
@@ -103,7 +103,7 @@
                                     </div>
                                     <div class="col-md-6  col-sm-12 col-xs-12 mb-3 wow fadeInUp">
                                         <a href="javascript:;">
-                                            <div class="imgs"><img src="static/images/sh2.jpg" alt="pic"></div>
+                                            <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/sh2.jpg" alt="pic"></div>
                                             <div class="right">
                                                 <h4 class="fs20 blueText bold">Jessie Poon</h4>
                                                 <p class="fs18">Business Intelligence Analyst, Food Panda 2019 Graduate Bachelor of Business Administration (Honours) in Supply Chain Management</p>
@@ -116,7 +116,7 @@
                                                     <div class="close"></div> 
                                                     <div class="row">
                                                         <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                            <div class='pic'><img src="static/images/sh1.jpg" alt="pic"></div>
+                                                            <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/sh1.jpg" alt="pic"></div>
                                                         </div>
                                                         <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                             <div class="fs32 bold blueText">Oscar Shek</div>
@@ -134,7 +134,7 @@
                                     </div>
                                     <div class="col-md-6  col-sm-12 col-xs-12 mb-3 wow fadeInUp">
                                         <a href="javascript:;">
-                                            <div class="imgs"><img src="static/images/sh3.jpg" alt="pic"></div>
+                                            <div class="imgs"><img src="<?=get_template_directory_uri()?>/static/images/sh3.jpg" alt="pic"></div>
                                             <div class="right">
                                                 <h4 class="fs20 blueText bold">Sarah Wong</h4>
                                                 <p class="fs18">Graduate Trainee at DSV – Global Transport and Logistics 2021 Graduate Bachelor of Business Administration (Hons) in Supply Chain ... Management</p>
@@ -147,7 +147,7 @@
                                                     <div class="close"></div> 
                                                     <div class="row">
                                                         <div class="col-md-4 col-sm-12 col-xs-12 mb-3">
-                                                            <div class='pic'><img src="static/images/sh1.jpg" alt="pic"></div>
+                                                            <div class='pic'><img src="<?=get_template_directory_uri()?>/static/images/sh1.jpg" alt="pic"></div>
                                                         </div>
                                                         <div class="col-md-8 col-sm-12 col-xs-12 mb-3">
                                                             <div class="fs32 bold blueText">Oscar Shek</div>
@@ -188,8 +188,3 @@
 
  
 </main>
-<?php require_once "footer.php"; ?>
-
-
-</body>
-</html>
