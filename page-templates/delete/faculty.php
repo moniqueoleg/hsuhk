@@ -16,7 +16,6 @@
                      <a href="../overview/" title="About Us">About Us</a>
                      <span>/</span>
                      <a href="" title="Faculty">Faculty</a>
-        
             </div>
         </div>
     </section>
@@ -44,21 +43,21 @@
                             <div class="navs">
                                 <div class="nav nav-tabs fs18  bold">
                                     <button role="button"  data-bs-toggle="tab" data-bs-target="#tab1" type="button" class="active">
-                                       <a href="" title="Academic STAFF">Academic STAFF</a>
+                                       <a title="Academic STAFF">Academic STAFF</a>
                                     </button>
                                     <button role="button"  data-bs-toggle="tab" data-bs-target="#tab2" type="button" >
-                                      <a href="" title="RESEARCH / ADJUNCT / HONORARY / PROFESSOR EMERITUS">RESEARCH / ADJUNCT / HONORARY / PROFESSOR EMERITUS</a>
+                                      <a title="RESEARCH / ADJUNCT / HONORARY / PROFESSOR EMERITUS">RESEARCH / ADJUNCT / HONORARY / PROFESSOR EMERITUS</a>
                                     </button>
                                     <button role="button" data-bs-toggle="tab" data-bs-target="#tab3" type="button">
-                                      <a href="Part-time Academic Staff">Part-time Academic Staff</a>
+                                      <a >Part-time Academic Staff</a>
                                     </button>
                                 </div>
                             </div> 
                             <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active">
+                                <div class="tab-pane fade show active" id="tab1">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
@@ -74,7 +73,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
@@ -90,7 +89,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
@@ -106,7 +105,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
@@ -122,7 +121,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
@@ -138,7 +137,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
@@ -154,7 +153,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
@@ -170,7 +169,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
@@ -186,7 +185,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
@@ -202,7 +201,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
@@ -218,7 +217,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
@@ -234,7 +233,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
@@ -252,7 +251,12 @@
                                      
                                     </div>
                                 </div>
-                                                  
+                                <div class="tab-pane fade show active" id="tab2">
+
+                                </div>
+                                <div class="tab-pane fade show active" id="tab3">
+
+                                </div>
                             </div>
                         </div>
                     </div>

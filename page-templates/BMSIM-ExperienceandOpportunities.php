@@ -16,8 +16,6 @@
                      <span>/</span>
                      <a href="" title="Programmes">Programmes</a>
                      <span>/</span>
-                     <a href="../BMSIM-Cover/" title="Bachelor Degree">Bachelor Degree</a>
-                     <span>/</span>
                      <a href="../BMSIM-Cover/" title="Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) ">Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</a>
                      <span>/</span>
                      <a href="" title="Experience and Opportunities">Experience and Opportunities</a>

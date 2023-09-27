@@ -71,7 +71,7 @@ body .bold {
   font-family: 'Roboto-Bold';
 }
 
-body .title {
+body .widget-title, body .title {
   font-family: 'Roboto-Bold';
   color: #000;
   display: flex;
@@ -79,7 +79,7 @@ body .title {
   text-transform: uppercase;
 }
 
-body .title::before {
+body .widget-title::before, body .title::before {
   content: '';
   display: inline-block;
   width: 60px;
@@ -2148,19 +2148,19 @@ header .links a:hover {
   }
 }
 
-.pl-3 .title {
+.pl-3 .widget-title, .pl-3 .title {
   background: #3F468B;
   padding: 1rem 2rem;
   text-transform: uppercase;
   border-radius: 10px 10px 0 0;
 }
 
-.pl-3 .title::before {
+.pl-3 .widget-title::before, .pl-3 .title::before {
   display: none;
 }
 
 @media (max-width: 767px) {
-  .pl-3 .title {
+  .pl-3 .widget-title, .pl-3 .title {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -2205,7 +2205,7 @@ header .links a:hover {
   margin-bottom: 0;
 }
 
-.pl-3 .px-4 .title {
+.pl-3 .px-4 .widget-title, .pl-3 .px-4 .title {
   padding: 1rem;
 }
 
@@ -3058,7 +3058,7 @@ header .links a:hover {
   color: #1F3368;
 }
 
-.index-block .menu-box ul li a.active, .index-block .menu-box ul li a:hover {
+.index-block .menu-box ul li a.active, .index-block .menu-box ul li a:hover, .index-block .menu-box ul li.current_page_item a {
   background: #3F468B;
   color: #ffffff;
 }
@@ -5568,7 +5568,7 @@ header .links a:hover {
   padding-right: 1rem;
 }
 
-.index-block .Academic .title.fs24::before {
+.index-block .Academic .widget-title.fs24::before , .index-block .Academic .title.fs24::before {
   margin-top: 15px;
 }
 
@@ -6361,4 +6361,13 @@ main {
   body {
     -webkit-print-color-adjust: exact;
   }
+}
+
+.template-hanhseng .widget-title {
+  color: white;
+  font-size: 28px;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  margin-bottom: 0!important;
+  
 }

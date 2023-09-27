@@ -1,42 +1,18 @@
 <?php /* Template Name: Home */ ?>
+<?php get_header(); ?>
 <style>
     body::before{display:none;}
 </style>
 <main>
-    <?php while ( have_posts() ) : the_post(); ?>
-        <?php get_template_part( 'content', 'page' ); ?>
-    <?php endwhile; // end of the loop. ?>
-
     <section class="banner index-banner position-relative wow fadeInUp">
         <div class="container">
                          <div class="row">
-                             <div class="col-md-5 col-sm-12 col-xs-12">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <span class="label blueLight fs14">Topics</span>
-                                            <h1 class="titleJa py-3 fs36 blueLight">Title2</h1>
-                                            <p class="slideHeader__text">All text data in this module are temporary and are only used for testing so that the design drawing can achieve the best preview effect. </p>
-                                            <a href="" class="more">details</a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <span class="label blueLight fs14">Topics</span>
-                                            <h1 class="titleJa py-3 fs36 blueLight">Title2</h1>
-                                            <p class="slideHeader__text">All text data in this module are temporary and are only used for testing so that the design drawing can achieve the best preview effect. </p>
-                                            <a href="" class="more">details</a>
-                                        </div>
-                                
-                                    </div>
-                                </div>
-                                
-                             </div>
-                             <div class="col-md-7 col-sm-12 col-xs-12">
-                                <div class="video-wrap">
-                                    <video class="bg-video" playsinline="" autoplay="" loop="" muted="">
-                                        <source src="https://hsu1.10u.org//mobile/scm/video.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                             </div>
+                            <?php
+                            while ( have_posts() ) {
+                                the_post();
+                                the_content();
+                            }
+                            ?>
                          </div>
         </div>
   
@@ -115,8 +91,17 @@
            <div class="row mt-5">
 
             <?php
-                while(have_posts()) {
-                    the_post();
+                $args = array(
+                    'post_type' => 'post',
+                    'category_name' =>'news',
+                    'posts_per_page' => 3,
+                );
+                
+                $query = new WP_Query($args);
+
+                if ($query->have_posts()) {
+                    while ($query->have_posts()) {
+                        $query->the_post();
             ?>
                 <div class='col-md-4 col-sm-12 col-xs-12 mt-3 wow fadeInUp'>
                    <a href="<?php the_permalink(); ?>">
@@ -138,6 +123,7 @@
                     </a>
                </div>
             <?php
+                }
                 }
             ?>
            </div>
@@ -184,21 +170,16 @@
                         <h3 class="fs28">Research</h3>
                     </a>
                </div>
-        
               
            </div>
 
        </div>
-          
-
-
             
     </section>
-
-   
- 
-
-
-
  
 </main>
+<?php get_footer(); ?>
+
+
+</body>
+</html>

@@ -23,11 +23,6 @@ get_header(); ?>
 <?php endif; ?>
 
 <?php
-    if(is_home()){
-        get_template_part( 'page-templates/home');
-    }
-?>
-<?php
 if ( have_posts() ) {
 
 	// Load posts loop.

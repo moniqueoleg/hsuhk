@@ -14,6 +14,7 @@ if ( version_compare( $GLOBALS['wp_version'], '5.3', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 }
 
+require_once get_template_directory() . '/fadeblock-widget.php';
 
 
 if ( ! function_exists( 'hsuhk_setup' ) ) {
@@ -46,10 +47,38 @@ function quickchic_widgets_init() {
 	register_sidebar(array(
 	'name' => __( 'Sidebar 1', 'quickchic' ),
 	'id' => 'sidebar-1',
-	'before_widget' => '',
-	'after_widget' => '',
-	'before_title' => '<h4>',
-	'after_title' => '</h4>',
+	));
+	register_sidebar(array(
+		'name' => "About Sidebar",
+		'id' => 'about-sidebar',
+	));
+	register_sidebar(array(
+		'name' => "Teaching & Learning Sidebar",
+		'id' => 'teaching-learning-sidebar',
+	));
+	register_sidebar(array(
+		'name' => "Research Sidebar",
+		'id' => 'research-sidebar',
+	));
+	register_sidebar(array(
+		'name' => "News & Events Sidebar",
+		'id' => 'news-events-sidebar',
+	));
+	register_sidebar(array(
+		'name' => "Admission Sidebar",
+		'id' => 'admission-sidebar',
+	));
+	register_sidebar(array(
+		'name' => "MSc-GSCM Sidebar",
+		'id' => 'msc-gscm-sidebar',
+	));
+	register_sidebar(array(
+		'name' => "BBA-SCM Sidebar",
+		'id' => 'bba-scm-sidebar',
+	));
+	register_sidebar(array(
+		'name' => "BMSIM Sidebar",
+		'id' => 'bmsim-sidebar',
 	));
 }
 add_action( 'init', 'quickchic_widgets_init' );
@@ -148,3 +177,69 @@ function redirect_to_language_url() {
     }
 }
 add_action( 'template_redirect', 'redirect_to_language_url' );
+
+
+function add_categories_to_pages() {
+    register_taxonomy_for_object_type('category', 'page');
+}
+
+add_action('init', 'add_categories_to_pages');
+
+if ( ! is_admin() ) {
+    add_action( 'pre_get_posts', 'category_and_tag_archives' );
+
+}
+
+function category_and_tag_archives( $wp_query ) {
+
+ $my_post_array = array('post','page');
+
+ if ( $wp_query->get( 'category_name' ) || $wp_query->get( 'cat' ) )
+    $wp_query->set( 'post_type', $my_post_array );
+
+ if ( $wp_query->get( 'tag' ) )
+    $wp_query->set( 'post_type', $my_post_array );
+}
+
+
+// Faculty Post Type
+
+function faculty_post_type() {
+	register_post_type('faculty_staff',
+		array(
+			'rewrite' => array('slug' => 'faculty_staff'),
+			'labels' => array(
+				'name' => 'Faculty Staffs',
+				'singular_name' => 'Faculty Staff',
+				'add_new_item' => 'Add New Staff',
+				'edit_item' => 'Edit Staff'
+			),
+			'menu-icon' => 'dashicons-buddicons-buddypress-logo',
+			'public' => true,
+			'has_archive' => true,
+			'show_in_rest' => true,
+			'supports' => array(
+				'title', 'thumbnail'
+			),
+			'taxonomies'    => array( 'category' ), // Add this line
+		)
+	);
+}
+
+add_action('init', 'faculty_post_type');
+
+
+function register_hsuhk_widgets() {
+	register_widget( 'FadeBlock_Widget' );
+}
+// Register Foo_Widget widget
+add_action( 'widgets_init', 'register_hsuhk_widgets' );
+
+
+function enqueue_script_for_widget_display( $instance, $widget, $args ) {
+    if ( $widget instanceof FadeBlock_Widget ) {
+        //wp_enqueue_script( 'your-script-handle' );
+    }
+}
+add_filter( 'widget_display_callback', 'enqueue_script_for_widget_display', 10, 3 );
+

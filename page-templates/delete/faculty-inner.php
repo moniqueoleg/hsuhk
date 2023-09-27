@@ -1,4 +1,4 @@
-<?php /* Template Name: faculty-ineer */ ?>
+<?php /* Template Name: faculty-inner */ ?>
 <main>
     <section class="page-banner position-relative wow fadeInUp">
         <div class="inner">

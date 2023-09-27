@@ -31,7 +31,7 @@
            <div class="row">
                <div class="col-md-2 col-sm-12 col-xs-12 left">
                    <div class="mt-5">
-                    <h2 class="fs20 pc blueLight bold wow fadeInUp" title="Contact Us">Contact Uss</h2>
+                    <h2 class="fs20 pc blueLight bold wow fadeInUp" title="Contact Us">Contact Us</h2>
                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Contact Us">Contact Us</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
                         <ul>         	        

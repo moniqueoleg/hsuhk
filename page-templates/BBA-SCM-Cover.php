@@ -32,11 +32,8 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
  
-
     </section>
 
-
-  
     <section class="first-block py-5 wow fadeInUp" >
        <div class="container">
             <div class="mneubar">
@@ -88,33 +85,42 @@
                </div>
                <div class='col-md-5 col-sm-12 col-xs-12 mt-4 wow fadeInUp'>
                     <div class="title fs36 bold mb-3">News</div> 
-                    <a href="">
-                        <div class="date">
-                               <strong class="day fs42">09</strong>
-                               <em class="year">May, 2023</em>
-                        </div>
-                        <div class="boximg">
-                           <img src="<?=get_template_directory_uri()?>/static/images/ss1.jpg" alt="news">
+
+                    <?php
+                        $args = array(
+                            'post_type' => 'post',
+                            'category_name' =>'news',
+                            'posts_per_page' => 1
+                        );
                         
-                        </div>
-                        <div class="con fs20">
-                            <p>Congratulations to Dr HO To Sum, School of Decision Sciences, wins the Silver Award at International Exhibition of Inventions Geneva 2023 </p>
-                        </div>
-                    </a>
+                        $query = new WP_Query($args);
+
+                        if ($query->have_posts()) {
+                            while ($query->have_posts()) {
+                                $query->the_post();
+                    ?>
+
+                            <a href="<?php the_permalink(); ?>">
+                                <div class="date">
+                                    <strong class="day fs42"><?php echo get_the_date('d'); ?></strong>
+                                    <em class="year"><?php echo get_the_date('M, Y'); ?></em>
+                                </div>
+                                <div class="boximg">
+                                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="pic">
+                                
+                                </div>
+                                <div class="con fs20">
+                                    <p><?php the_title(); ?></p>
+                                </div>
+                            </a>
+                        <?php
+                        }
+                        wp_reset_postdata();
+                    }
+                ?>
+
                </div>
-              
            </div>
-
        </div>
-          
-
-
-            
     </section>
-
- 
-
-
-
- 
 </main>

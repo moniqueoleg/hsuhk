@@ -26,7 +26,7 @@ $(".close").click(function(){
 
 })
 
-$(".index-block .IOlist .col-md-12 a,.index-block .IOlist .col-md-6 a,.index-block .news .evlist .items>a").click(function(){
+$(".index-block .IOlist .col-md-12 a,.index-block .IOlist .col-md-6 a,.index-block .news .evlist .items a").click(function(){
   var num = $(".index-block .IOlist .col-md-12 a,.index-block .IOlist .col-md-6 a,.index-block .news .evlist .items a").index($(this));
   $(".index-block .IOlist .col-md-12,.index-block .IOlist .col-md-6,.index-block .news .evlist .items").eq(num).find(".pup").addClass("active");
   $("main").css("z-index","9999");

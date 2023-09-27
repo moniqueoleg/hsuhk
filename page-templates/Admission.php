@@ -40,7 +40,7 @@
                         
                         <div class="title fs28 white  wow fadeInUp" title="Admission">Admission</div>
                         <div class="txt fs18  wow fadeInUp">
-                        <div class="faq">
+                            <div class="faq">
                                 <ul>         
                                     <li class="li li2 wow fadeInUp">
                                         <a class="fs18 bold" title="Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM)">Bachelor of Business Administration (Honours) in Supply Chain Management (BBA-SCM)<i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></a>

@@ -58,8 +58,10 @@
 
                     <div class="lang">
                         <?php if (function_exists('pll_the_languages')): ?>
-                            <?php $languages = pll_the_languages(array('raw'=>1)); ?>
-                            <?php foreach ($languages as $language): ?>
+                            <?php $languages = pll_the_languages(array('raw'=>1));?>
+                            <?php foreach ($languages as $language): 
+                                ?>
+
                                 <a href="<?php echo $language['url']; ?>" title="<?php if ($language['name']=="en"): echo "EN"; elseif ($language['name']=="zh"): echo "繁體"; endif; ?>">
                                     <!-- <?php echo $language['slug']; ?> -->
                                     <?php if ($language['slug']=="en"): echo "EN"; elseif ($language['slug']=="zh"): echo "繁體"; endif; ?>
@@ -90,7 +92,6 @@
                                     <!-- <?php echo $language['slug']; ?> -->
                                     <?php if ($language['slug']=="en"): echo "EN"; elseif ($language['slug']=="zh"): echo "繁"; endif; ?>
                                 </a>
-                                
                             <?php endforeach; ?>
                         <?php endif; ?>
                         <!-- <a href="" class="active"  title="en">EN</a>

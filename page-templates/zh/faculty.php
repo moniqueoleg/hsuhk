@@ -58,7 +58,7 @@
                                 <div class="tab-pane fade show active">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
@@ -74,7 +74,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
@@ -90,7 +90,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
@@ -106,7 +106,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
@@ -122,7 +122,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
@@ -138,7 +138,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
@@ -154,7 +154,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
@@ -170,7 +170,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
@@ -186,7 +186,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
@@ -202,7 +202,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
@@ -218,7 +218,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof LEUNG Chi Kin, Lawrence<br/>梁志堅教授</h4>
                                                     <p>Research Professor (SCM)</p>
@@ -234,7 +234,7 @@
                                             </a>
                                         </div>
                                         <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
-                                            <a href="../faculty-ineer/" class="border">
+                                            <a href="../faculty-inner/" class="border">
                                                 <div class="left">
                                                     <h4 class="fs20 blueLight">Prof CHENG Tai Chiu, Edwin<br/>鄭大昭教授</h4>
                                                     <p>Honorary Professor (SCM)</p>
