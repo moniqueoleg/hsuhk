@@ -1,5 +1,6 @@
 <?php
 class FadeBlock_Widget extends WP_Widget {
+
 	public function __construct() {
 		parent::__construct(
 			'hsuhk-fade-block-widget',  // Base ID
@@ -11,49 +12,86 @@ class FadeBlock_Widget extends WP_Widget {
 	}
 
 	public $args = array(
-		'before_title'  => '<h4 class="widgettitle">',
-		'after_title'   => '</h4>',
-		'before_widget' => '<div class="widget-wrap">',
-		'after_widget'  => '</div></div>',
+		'before_title'  => '<div class="title mt-5 fs28 white wow fadeInUp">',
+		'after_title'   => '</div>',
 	);
 
 	public function widget( $args, $instance ) {
-		echo $args['before_widget'];
 		if ( ! empty( $instance['title'] ) ) {
 			echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
 		}
-		echo '<div class="textwidget">';
-		echo esc_html__( $instance['text'], 'text_domain' );
-		echo '</div>';
-		echo $args['after_widget'];
+		if ( ! empty( $instance['content'] ) ) {
+			echo '<div class="txt fs18  wow fadeInUp">';
+			echo  $instance['content'] ;
+			echo '</div>';
+		}
 	}
 
-	public function form( $instance ) {
-		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( '', 'text_domain' );
-		$text  = ! empty( $instance['text'] ) ? $instance['text'] : esc_html__( '', 'text_domain' );
+    public function form($instance) {
+        $title = !empty($instance['title']) ? $instance['title'] : '';
+        $content = !empty($instance['content']) ? $instance['content'] : '';
 
-		$content = isset( $instance['content'] ) ? $instance['content'] : '';
-		$editor_id = $this->get_field_id( 'content' );
-		?>
-		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php echo esc_html__( 'Title:', 'text_domain' ); ?></label>
-			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
-		</p>
-		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'Text' ) ); ?>"><?php echo esc_html__( 'Text:', 'text_domain' ); ?></label>
-			<textarea class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'text' ) ); ?>" type="text" cols="30" rows="10"><?php echo esc_attr( $text ); ?></textarea>
-			<?php wp_editor( $content, $editor_id );?>
-		</p>
-		<?php
-		
-		
-	}
+        ?>
+        <p>
+           <label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php _e('Title:'); ?></label>
+           <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>" name="<?php echo esc_attr($this->get_field_name('title')); ?>" type="text" value="<?php echo esc_attr($title); ?>">
+        </p>
+        <p>
+			<label for="<?php echo esc_attr($this->get_field_id('content')); ?>"><?php _e('Content:'); ?></label>
+			<div class="custom-fade-editor">
+				<textarea class="widefat" id="<?php echo esc_attr($this->get_field_id('content')); ?>" name="<?php echo esc_attr($this->get_field_name('content')); ?>"><?php echo esc_attr($content); ?></textarea>
+			</div>
+        </p>
+        <?php
+    }
 
-	public function update( $new_instance, $old_instance ) {
-		$instance          = array();
-		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-		$instance['text']  = ( ! empty( $new_instance['text'] ) ) ? wp_kses_post($new_instance['text']) : '';
-		$instance['content'] = wp_kses_post( $new_instance['content'] );
-		return $instance;
-	}
+    public function update($new_instance, $old_instance) {
+        $instance = array();
+        $instance['title'] = (!empty($new_instance['title'])) ? strip_tags($new_instance['title']) : '';
+        $instance['content'] = (!empty($new_instance['content'])) ? $new_instance['content'] : '';
+        return $instance;
+    }
+}
+
+
+/**
+ * Add TinyMCE to multiple Textareas (usually in backend).
+ */
+add_action('admin_print_footer_scripts','my_admin_print_footer_scripts',99);
+function my_admin_print_footer_scripts() {
+    ?><script type="text/javascript">/* <![CDATA[ */
+		var active_editors = [];
+
+		jQuery(document).ready(function($) {
+			function init_editors() {
+				$('.custom-fade-editor textarea').each(function(e)
+				{
+					var id = $(this).attr('id');
+					if (!id)
+					{
+						id = 'customEditor-' + i++;
+						$(this).attr('id',id);
+					}
+					if (active_editors.indexOf(id) === -1) {
+						wp.editor.initialize(id, {
+							tinymce: {
+							wpautop: true,
+								plugins : 'charmap colorpicker compat3x directionality fullscreen hr image lists media paste tabfocus textcolor wordpress wpautoresize wpdialogs wpeditimage wpemoji wpgallery wplink wptextpattern wpview',
+								toolbar1: 'bold italic underline strikethrough | bullist numlist | blockquote hr wp_more | alignleft aligncenter alignright | link unlink | fullscreen | wp_adv',
+								toolbar2: 'formatselect alignjustify forecolor | pastetext removeformat charmap | outdent indent | undo redo | wp_help'
+							},
+							quicktags: true,
+							mediaButtons: true,
+						});
+						active_editors.push(id);
+					}
+				});
+			}
+			$(document).on('DOMNodeInserted', function(event) {
+				setTimeout(() => {
+					init_editors();
+				}, 500);
+			});
+        });
+    /* ]]> */</script><?php
 }
