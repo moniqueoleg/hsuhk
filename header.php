@@ -5,13 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, viewport-fit=cover">
 <meta name="format-detection" content="telephone=no, email=no">
-<?php wp_head(); ?>
 <meta name="keywords" content="">
 <meta name="description" content="">
-<link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon.png">
-
+<link rel="apple-touch-icon" sizes="180x180" href="<?=get_template_directory_uri()?>/static/images/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?=get_template_directory_uri()?>/static/images/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?=get_template_directory_uri()?>/static/images/favicon.png">
+<?php wp_head();?>
 <link rel="stylesheet" href="<?=get_template_directory_uri()?>/static/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?=get_template_directory_uri()?>/static/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="<?=get_template_directory_uri()?>/static/css/swiper-bundle.min.css">
@@ -38,7 +37,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <div class="left ">
                     <div class="logo">
-                        <a href="<?=site_url();?>"><img src="<?=get_template_directory_uri()?>/static/images/logo.png" alt="logo"></a>
+                        <a href="<?=home_url();?>"><img src="<?=get_template_directory_uri()?>/static/images/logo.png" alt="logo"></a>
                     </div>               
                    
                 </div>
@@ -61,9 +60,7 @@
                             <?php $languages = pll_the_languages(array('raw'=>1));?>
                             <?php foreach ($languages as $language): 
                                 ?>
-
-                                <a href="<?php echo $language['url']; ?>" title="<?php if ($language['name']=="en"): echo "EN"; elseif ($language['name']=="zh"): echo "繁體"; endif; ?>">
-                                    <!-- <?php echo $language['slug']; ?> -->
+                                <a href="<?php echo $language['url']; ?>"  class="<?php if ($language['slug']==pll_current_language()): echo "active-language"; else: echo ""; endif; ?>" title="<?php if ($language['name']=="en"): echo "EN"; elseif ($language['name']=="zh"): echo "繁體"; endif; ?>">
                                     <?php if ($language['slug']=="en"): echo "EN"; elseif ($language['slug']=="zh"): echo "繁體"; endif; ?>
                                 </a>
                                 <?php if ($language != end($languages)): ?>
@@ -71,15 +68,22 @@
                                 <?php endif; ?>
                             <?php endforeach; ?>
                         <?php endif; ?>
-                    </div>                    
+                    </div>
+                    <div class="icon-box mobile-nav-toggler d-flex d-md-none align-items-center">
+                        <button class="btn collapsed d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseNav" aria-expanded="false">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
             </div>
           
         </div>
               <!-- Mobile Menu  -->
-        <div class="mobile-menu">
+        <div class="mobile-menu d-xl-none">
             <div class="menu-backdrop"></div>
-            <!--<div class="close-btn"><span class="icon flaticon-multiply"></span></div>-->
+            <!-- <div class="close-btn"><span class="icon flaticon-multiply"></span></div> -->
          
             <nav class="menu-box">
 				<!-- Search -->
@@ -88,7 +92,7 @@
                         <?php if (function_exists('pll_the_languages')): ?>
                             <?php $languages = pll_the_languages(array('raw'=>1)); ?>
                             <?php foreach ($languages as $language): ?>
-                                <a href="<?php echo $language['url']; ?>" class="<?php if ($language['slug']=="en"): echo "active"; else: echo ""; endif; ?>" title="<?php echo $language['name'] ?>">
+                                <a href="<?php echo $language['url']; ?>" class="<?php if ($language['slug']==pll_current_language()): echo "active-language"; else: echo ""; endif; ?>" title="<?php echo $language['name'] ?>">
                                     <!-- <?php echo $language['slug']; ?> -->
                                     <?php if ($language['slug']=="en"): echo "EN"; elseif ($language['slug']=="zh"): echo "繁"; endif; ?>
                                 </a>
