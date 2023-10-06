@@ -1,51 +1,7 @@
  
 <main>
-    <section class="banner position-relative wow fadeInUp">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/side2.jpg" alt="banner"></div>
-                    <div class="inner">
-                        <div class="container">
-                            <div class="banText banText2">
-                                <h1 class="fs36 bold blueText">Master of Science in<br/>Global Supply Chain Management</h1>
-                                <a href="" class="more">More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/side2.jpg" alt="banner"></div>
-                    <div class="inner">
-                        <div class="container">
-                            <div class="banText banText2">
-                                <h1 class="fs36 bold blueText">Master of Science in<br/>Global Supply Chain Management</h1>
-                                <a href="" class="more">More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/side2.jpg" alt="banner"></div>
-                    <div class="inner">
-                        <div class="container">
-                            <div class="banText banText2">
-                                <h1 class="fs36 bold blueText">Master of Science in<br/>Global Supply Chain Management</h1>
-                                <a href="" class="more">More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             
-             
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
 
-    </section>
-
+    <?php the_content(); ?>
 
   
     <section class="first-block py-5 wow fadeInUp" >
@@ -53,65 +9,84 @@
             <div class="mneubar">
                 <div class="row justify-content-between">
                     <div class="col-md-2 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                        <a href="../msc-gscm-programme-overview/">
+                        <a href="../msc-gscm-programme-overview-zh/">
                             <img src="<?=get_template_directory_uri()?>/static/images/i7.svg" alt="Programme Overview">
-                            <h3 class="fs20 text-center bold blueText">Programme Overview</h3>
+                            <h3 class="fs20 text-center bold blueText">課程概述</h3>
                         </a>
                     </div>
                     <div class="col-md-2 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                        <a href="../MSc-GSCM-Academic-Structure/">
+                        <a href="../MSc-GSCM-Academic-Structure-zh/">
                             <img src="<?=get_template_directory_uri()?>/static/images/i8.svg" alt="Academic Structure"> 
-                            <h3 class="fs20 text-center bold blueText">Academic Structure</h3>
+                            <h3 class="fs20 text-center bold blueText">學術結構</h3>
                         </a>
                     </div>
                     <div class="col-md-2 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                        <a href="../MSc-GSCM-Career-Prospects/">
+                        <a href="../MSc-GSCM-Career-Prospects-zh/">
                             <img src="<?=get_template_directory_uri()?>/static/images/i9.svg" alt="Career Prospects">
-                            <h3 class="fs20 text-center bold blueText">Career<br/> Prospects</h3>
+                            <h3 class="fs20 text-center bold blueText">職業前景</h3>
                         </a>
                     </div>
                     <div class="col-md-2 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                        <a href="../MSc-GSCM-Scholarships-FinancialAid/">
+                        <a href="../MSc-GSCM-Scholarships-FinancialAid-zh/">
                             <img src="<?=get_template_directory_uri()?>/static/images/i10.svg" alt="Scholarship & Financial Aids">
-                            <h3 class="fs20 text-center bold blueText">Scholarship & Financial Aids</h3>
+                            <h3 class="fs20 text-center bold blueText">獎學金和經濟援助</h3>
                         </a>
                     </div>
                     <div class="col-md-2 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                        <a href="../MSc-GSCM-Graduate-Sharing/">
+                        <a href="../MSc-GSCM-Graduate-Sharing-zh/">
                             <img src="<?=get_template_directory_uri()?>/static/images/i11.svg" alt="Graduate Sharing">
-                            <h3 class="fs20 text-center bold blueText">Graduate<br/> Sharing</h3>
+                            <h3 class="fs20 text-center bold blueText">畢業生分享</h3>
                         </a>
                     </div>
                     <div class="col-md-2 col-sm-12 col-xs-12 mb-3 wow fadeInUp">
-                        <a href="../MSc-GSCM-Admission/">
+                        <a href="../MSc-GSCM-Admission-zh/">
                             <img src="<?=get_template_directory_uri()?>/static/images/i12.svg" alt="Admission">
-                            <h3 class="fs20 text-center bold blueText">Admission</h3>
+                            <h3 class="fs20 text-center bold blueText">入場</h3>
                         </a>
                     </div>
                 </div>
             </div>
            <div class="row mt-4">
                 <div class='col-md-7 col-sm-12 col-xs-12 mt-4 wow fadeInUp'>
-                   <div class="title fs36 bold mb-3">Video</div> 
+                   <div class="title fs36 bold mb-3">影片</div> 
                    <div class="video">
                        <img src="<?=get_template_directory_uri()?>/static/images/video.jpg" alt="video">
                    </div>
                </div>
                <div class='col-md-5 col-sm-12 col-xs-12 mt-4 wow fadeInUp'>
-                    <div class="title fs36 bold mb-3">News</div> 
-                    <a href="">
-                        <div class="date">
-                               <strong class="day fs42">09</strong>
-                               <em class="year">May, 2023</em>
-                        </div>
-                        <div class="boximg">
-                           <img src="<?=get_template_directory_uri()?>/static/images/ss1.jpg" alt="news">
+                    <div class="title fs36 bold mb-3">最新消息</div> 
+                    <?php
+                        $args = array(
+                            'post_type' => 'post',
+                            'category_name' =>'news',
+                            'posts_per_page' => 1
+                        );
                         
-                        </div>
-                        <div class="con fs20">
-                            <p>Congratulations to Dr HO To Sum, School of Decision Sciences, wins the Silver Award at International Exhibition of Inventions Geneva 2023 </p>
-                        </div>
-                    </a>
+                        $query = new WP_Query($args);
+
+                        if ($query->have_posts()) {
+                            while ($query->have_posts()) {
+                                $query->the_post();
+                    ?>
+
+                            <a href="<?php the_permalink(); ?>">
+                                <div class="date">
+                                    <strong class="day fs42"><?php echo get_the_date('d'); ?></strong>
+                                    <em class="year"><?php echo get_the_date('M, Y'); ?></em>
+                                </div>
+                                <div class="boximg">
+                                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="pic">
+                                
+                                </div>
+                                <div class="con fs20">
+                                    <p><?php the_title(); ?></p>
+                                </div>
+                            </a>
+                        <?php
+                        }
+                        wp_reset_postdata();
+                    }
+                ?>
                </div>
               
            </div>
@@ -129,6 +104,5 @@
 
  
 </main>
-<?php require_once "footer2.php"; ?>
 
 

@@ -1,31 +1,63 @@
 <?php get_header();  ?>
 <main>
 <?php
+    if (pll_current_language() == 'en') {
+        $pageTitle = "Faculty";
+        $categoryTitle = "About Us";
+        $EmailText = "Email";
+        $TelText = "Tel";
+        $OfficeText = "Office";
+        $BooksText = "Books";
+        $SelectedPubText = "Selected Publications";
+    } else {
+        $categoryTitle = "學術人員";
+        $pageTitle = " 關於我們";
+        $EmailText = "電子郵件";
+        $TelText = "電話";
+        $OfficeText = "辦公室";
+        $BooksText = "圖書";
+        $SelectedPubText = "精選出版品";
+    }
 while ( have_posts() ) :
     the_post();
 ?>
     <section class="page-banner position-relative wow fadeInUp">
         <div class="inner">
             <div class="container">
-                <h1 class="fs36 blueText bold wow fadeInUp" title="Faculty">Faculty</h1>
-              
-                
+                <h1 class="fs36 blueText bold wow fadeInUp" title="Faculty"><?php echo $pageTitle; ?></h1>
+
             </div>
         </div>
         <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b1.jpg" alt="images"></div>
         <div class="bread">
-            <div class="container">
-                
-                     <a href="<?=home_url();?>" title="Home">Home</a>   
-                     <span>/</span>
-                     <a href="<?=home_url();?>/overview/" title="About Us">About Us</a>
-                     <span>/</span>
-                     <a href="<?=home_url();?>/faculty/" title="Faculty">Faculty</a>
-                     <span>/</span>
-                     <a href="" title="<?php the_title(); ?>"><?php echo get_field( 'name' ); ?></a>
-        
-            </div>
+        <div class="container">
+            <a href="<?= home_url() ?>" title="Home">
+            <?php
+            if (pll_current_language() == 'en') {
+                echo "Home";
+            } else {
+                echo "首頁";
+            }
+            ?>
+
+            </a>
+            <span>/</span>
+            <?php
+            $categories = get_the_terms(get_the_ID(), 'category');
+            if (!empty($categories)) {
+                $category_hierarchy = array();
+                foreach ($categories as $category) {
+                    if ($category->parent != 0) {
+                        $parent_category = get_term($category->parent, 'category');
+                        echo '<a href="">' . esc_html($parent_category->name) . '</a><span>/</span>';
+                    }
+                    echo '<a href="">' . esc_html($category->name) . '</a><span>/</span>';
+                }
+            }
+            ?>
+            <a href="" title="<?php the_title(); ?>"><?=get_field( 'name' ); ?></a>
         </div>
+    </div>
     </section>
 
   
@@ -33,14 +65,15 @@ while ( have_posts() ) :
        <div class="container">
            <div class="row">
                 <div class="col-md-2 col-sm-12 col-xs-12 left">
-                    <h2 class="fs20 pc blueText bold wow fadeInUp" title="About Us">About Us</h2>
-                    <h2 class="fs20 mobile blueText bold wow fadeInUp" title="About Us">About Us</h2>
+                    <h2 class="fs20 pc blueText bold wow fadeInUp" title="About Us"><?php echo $categoryTitle; ?></h2>
+                    <h2 class="fs20 mobile blueText bold wow fadeInUp" title="About Us"><?php echo $categoryTitle; ?></h2>
                     <div class='htmleaf-container wow fadeInUp'>
                         <div class="menu-box htmleaf-content bgcolor-3  ">
                             <ul class="mtree bubba">         	        
-                                <li><a  href="<?=home_url();?>/overview/"  title="Overview">Overview</a> </li>        
-                                <li><a  href="<?=home_url();?>/faculty/" class="active"  title="Staff">Faculty</a> </li>  
-                                <li><a  href="<?=home_url();?>/contact-us/"  title="Contact Us" >Contact Us</a> </li>                                  
+                                <?php
+                                if ( is_active_sidebar( 'about-sidebar' ) ) : ?>
+                                    <?php dynamic_sidebar( 'about-sidebar' ); ?>
+                                <?php endif; ?>                              
                             </ul>
                         </div>
                     </div>
@@ -60,9 +93,9 @@ while ( have_posts() ) :
                                                 <div class="right fs18">
                                                     <h4 class="fs20 blueLight bold"><?php echo get_field( 'name' ); ?><br/><?php echo get_field( 'chinese_name' ); ?></h4>
                                                     <dl>
-                                                        <dd><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span>Email: <?php echo get_field( 'email' ); ?></span></dd>
-                                                        <dd><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span>Tel: <?php echo get_field( 'phone' ); ?></span></dd>
-                                                        <dd><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span>Office : <?php echo get_field( 'office' ); ?></span></dd>
+                                                        <dd><img src="<?=get_template_directory_uri()?>/static/images/mail.svg" alt="icos"><span><?php echo $EmailText; ?>: <?php echo get_field( 'email' ); ?></span></dd>
+                                                        <dd><img src="<?=get_template_directory_uri()?>/static/images/tel.svg" alt="icos"><span><?php echo $TelText; ?>: <?php echo get_field( 'phone' ); ?></span></dd>
+                                                        <dd><img src="<?=get_template_directory_uri()?>/static/images/door.svg" alt="icos"><span><?php echo $OfficeText; ?>: <?php echo get_field( 'office' ); ?></span></dd>
                                                     </dl>
                                                 </div>
                                             </div>
@@ -84,26 +117,7 @@ while ( have_posts() ) :
                                     </div>
 
                                 </div>
-                                <div class="tags mt-5">
-                                    <div class="in"> 
-                                        <a href="#one" class="active">Selected Publications</a>
-                                        <a href="#two">Books</a>
-                                    </div>
-                                </div>
-                                <div class="itlist">
-                                    <div class="items" id="one">
-                                        <h4 class="fs20 bold">Selected Publications</h4>
-                                        <div class="txt fs18">
-                                        <?php echo get_field( 'selected_publications' ); ?>
-                                        </div>
-                                    </div>
-                                    <div class="items" id="two">
-                                        <h4 class="fs20 bold">Books</h4>
-                                        <div class="txt fs18">
-                                        <?php echo get_field( 'books' ); ?>
-                                        </div>
-                                    </div>
-                                </div>
+                                <?=the_content(); ?>
                         
                             </div>
 

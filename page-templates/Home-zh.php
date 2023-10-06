@@ -1,4 +1,4 @@
-<?php /* Template Name: Home */ ?>
+<?php /* Template Name: Home-zh */ ?>
 <?php get_header(); ?>
 <style>
     body::before{display:none;}
@@ -19,7 +19,7 @@
         
 
         <div class="slideHeader__scrolldown">
-            <p class="slideHeader__scrolldown__text">SCROLL</p>
+            <p class="slideHeader__scrolldown__text">捲動</p>
             <span class="slideHeader__scrolldown__line"></span>
         </div>
     </section>
@@ -29,37 +29,37 @@
     <section class="second-block py-5 wow fadeInUp" >
        <div class="container">
            <div class="big-title d-flex align-items-center justify-content-between">
-               <div class="title fs40 wow bounceInLeft" title="NEWS">Programmes</div>
-               <b class="fs100 bold wow bounceInRight">Programmes</b>
+               <div class="title fs40 wow bounceInLeft" title="NEWS">課程</div>
+               <b class="fs100 bold wow bounceInRight">課程</b>
             </div>
            <div class="row mt-5">
                <div class='col-md-3 col-sm-12 col-xs-12 mt-3 wow fadeInUp'>
-                   <a href="<?=home_url()?>/bmsim-cover">
+                   <a href="<?=home_url()?>/bmsim-cover-zh">
                         <div class="boximg">
                            <img src="<?=get_template_directory_uri()?>/static/images/p1.jpg" alt="pic">
                         </div>
                         <div class="con fs20">
-                            <p>Bachelor of Science (Honours) in Actuarial Studies and Insurance </p>
+                            <p>精算研究與保險理學士（榮譽） </p>
                         </div>
                     </a>
                </div>
                <div class='col-md-3 col-sm-12 col-xs-12 mt-3 wow fadeInUp'>
-                   <a href="<?=home_url()?>/bba-scm-cover/">
+                   <a href="<?=home_url()?>/bba-scm-cover-zh/">
                         <div class="boximg">
                            <img src="<?=get_template_directory_uri()?>/static/images/p2.jpg" alt="pic">
                         </div>
                         <div class="con fs20">
-                            <p>Bachelor of Science (Honours) in Data Science and Business Intelligence </p>
+                            <p>數據科學和商業智慧理學學士（榮譽） </p>
                         </div>
                     </a>
                </div>
                <div class='col-md-3 col-sm-12 col-xs-12 mt-3 wow fadeInUp'>
-                   <a href="<?=home_url()?>/msc-gscm-cover/">
+                   <a href="<?=home_url()?>/msc-gscm-cover-zh/">
                         <div class="boximg">
                            <img src="<?=get_template_directory_uri()?>/static/images/p3.jpg" alt="pic">
                         </div>
                         <div class="con fs20">
-                            <p>Executive Master of Science in Insurance</p>
+                            <p>保險行政碩士</p>
                         </div>
                     </a>
                </div>
@@ -69,7 +69,7 @@
                            <img src="<?=get_template_directory_uri()?>/static/images/p4.jpg" alt="pic">
                         </div>
                         <div class="con fs20">
-                            <p>"One more programme"</p>
+                            <p>"又一個節目"</p>
                         </div>
                     </a>
                </div>
@@ -85,8 +85,8 @@
     <section class="third-block  mt-lg-4 py-5 wow fadeInUp" >
        <div class="container">
            <div class="big-title d-flex align-items-center justify-content-between">
-               <div class="title fs40 wow bounceInLeft" title="NEWS">NEWS</div>
-               <b class="fs100 bold wow bounceInRight">NEWS</b>
+               <div class="title fs40 wow bounceInLeft" title="NEWS">最新消息</div>
+               <b class="fs100 bold wow bounceInRight">最新消息</b>
             </div>
            <div class="row mt-5">
 
@@ -105,10 +105,6 @@
             ?>
                 <div class='col-md-4 col-sm-12 col-xs-12 mt-3 wow fadeInUp'>
                    <a href="<?php the_permalink(); ?>">
-                        <!-- <div class="date">
-                               <strong class="day fs42">12</strong>
-                               <em class="year">Jan, 2023</em>
-                        </div> -->
                         <div class="date">
                             <strong class="day fs42"><?php echo get_the_date('d'); ?></strong>
                             <em class="year"><?php echo get_the_date('M, Y'); ?></em>
@@ -127,7 +123,7 @@
                 }
             ?>
            </div>
-           <a href="<?=home_url()?>/news" class="more-n mt-5 mb-4 fs20 wow fadeInUp">More News</a>
+           <a href="<?=home_url()?>/news-zh" class="more-n mt-5 mb-4 fs20 wow fadeInUp">更多新聞</a>
 
        </div>
           
@@ -138,36 +134,36 @@
     <section class="four-block  mt-lg-4 py-5 wow fadeInUp" >
        <div class="container">
            <div class="big-title d-flex align-items-center justify-content-between">
-               <div class="title fs40 wow bounceInLeft" title="Department Highlights">Department Highlights</div>
-               <b class="fs100 bold wow bounceInRight">Highlights</b>
+               <div class="title fs40 wow bounceInLeft" title="Department Highlights">部門亮點</div>
+               <b class="fs100 bold wow bounceInRight">強調</b>
             </div>
     
            <div class="row mt-5">
                <div class='col-md-4 col-sm-12 col-xs-12 mt-3 wow fadeInUp'>
-                   <a href="<?=home_url()?>/why-choose-our-programmes/">
+                   <a href="<?=home_url()?>/why-choose-our-programmes-zh/">
                         <div class="boximg">
                            <img src="<?=get_template_directory_uri()?>/static/images/f1.jpg" alt="pic">
                        
                         </div>
-                        <h3 class="fs28">Teaching & Learning</h3>
+                        <h3 class="fs28">教學與學習</h3>
                     </a>
                </div>
                <div class='col-md-4 col-sm-12 col-xs-12 mt-3 wow fadeInUp'>
-                   <a href="<?=home_url()?>/admission">
+                   <a href="<?=home_url()?>/admission-zh">
                         <div class="boximg">
                            <img src="<?=get_template_directory_uri()?>/static/images/f2.jpg" alt="pic">
                        
                         </div>
-                        <h3 class="fs28">Admission Information</h3>
+                        <h3 class="fs28">入學資訊</h3>
                     </a>
                </div>
                <div class='col-md-4 col-sm-12 col-xs-12 mt-3 wow fadeInUp'>
-                   <a href="<?=home_url()?>/research-profile/">
+                   <a href="<?=home_url()?>/research-profile-zh/">
                         <div class="boximg">
                            <img src="<?=get_template_directory_uri()?>/static/images/f3.jpg" alt="pic">
                        
                         </div>
-                        <h3 class="fs28">Research</h3>
+                        <h3 class="fs28">研究</h3>
                     </a>
                </div>
               

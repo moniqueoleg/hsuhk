@@ -1,4 +1,4 @@
-<?php /* Template Name: MSc-GSCM-Career-Prospects */ ?> 
+<?php /* Template Name: BMSIM-Career-Prospects */ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
@@ -8,7 +8,7 @@
                 
             </div>
         </div>
-        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b6.jpg" alt="images"></div>
+        <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/b88.jpg" alt="images"></div>
     </section>
     <div class="bread">
             <div class="container">
@@ -16,7 +16,7 @@
                      <span>/</span>
                      <a href="" title="Programmes">Programmes</a>
                      <span>/</span>
-                     <a href="../MSc-GSCM-Cover/" title="Master of Science in Global Supply Chain Management (MSc-GSCM) ">Master of Science in Global Supply Chain Management (MSc-GSCM)</a>
+                     <a href="../BMSIM-Cover/" title=" Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05) "> Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</a>
                      <span>/</span>
                      <a href="" title="Career Prospects">Career Prospects</a>
             </div>
@@ -29,17 +29,14 @@
            <div class="row">
                <div class="col-md-2 col-sm-12 col-xs-12 left">
                    <div class="mt-5">
-                    <h2 class="fs20 pc blueLight bold wow fadeInUp" title="Master of Science in Global Supply Chain Management (MSc-GSCM)">Master of Science in Global Supply Chain Management (MSc-GSCM)</h2>
-                    <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Master of Science in Global Supply Chain Management (MSc-GSCM)">Master of Science in Global Supply Chain Management (MSc-GSCM)</h2>
-                    <div class="menu-box mt-3 wow fadeInUp">
-                        <ul>         	        
-                            <li><a  href="../msc-gscm-programme-overview/"  title="Programme Overview ">Programme Overview </a> </li>        
-                            <li><a  href="../MSc-GSCM-Academic-Structure/" title="Academic Structure">Academic Structure</a> </li>  
-                            <li><a  href="../MSc-GSCM-Career-Prospects/"   class="active" title="Career Prospects" >Career Prospects</a> </li>  
-                            <li><a  href="../MSc-GSCM-Scholarships-FinancialAid/" title="Scholarship & Financial Aids">Scholarship & Financial Aids</a> </li>        
-                            <li><a  href="../MSc-GSCM-Graduate-Sharing/"   title="Graduate Sharing">Graduate Sharing</a> </li>  
-                            <li><a  href="../MSc-GSCM-Admission/"  title="Admission" >Admission</a> </li>  
-                                
+                     <h2 class="fs20 pc blueLight bold wow fadeInUp" title="Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)">Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</h2>
+                     <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)">Bachelor of Management Science and Information Management (Honours)(BMSIM) Programme (JUPAS Code: JSSH05)</h2>
+                     <div class="menu-box mt-3 wow fadeInUp">
+                        <ul>
+                            <?php
+                            if ( is_active_sidebar( 'bmsim-sidebar' ) ) : ?>
+                                <?php dynamic_sidebar( 'bmsim-sidebar' ); ?>
+                            <?php endif; ?>
                         </ul>
                     </div>
                   </div>
@@ -49,38 +46,29 @@
                         
                         <div class="title fs28 white  wow fadeInUp" title="Career Prospects">Career Prospects</div>
                         <div class="txt fs18  wow fadeInUp">
-                            <p>The programme aims to cultivate student to be management professionals with analytical thoughts and innovative and design solutions for business. Graduates are expected to have the abilities to join various professions including:</p>
+                            <p>With a solid training in Management Science and Information Management, the areas of potential careers for graduates include:</p>
                             <ul>
-                                <li>Procurement Analyst</li>
-                                <li>Purchasing Manager</li>
-                                <li>Logistics Manager</li>
-                                <li>Supply Chain Manager</li>
-                                <li>Supply Chain Analyst</li>
-
-                                <li>Warehouse Manager</li>
-                                <li>Production Planner</li>
-                                <li>Sourcing Manager</li>
-                                <li>Inventory Specialist</li>
-                                <li>Business Analyst</li>
+                                <li>Manufacturing / Service Operations Management</li>
+                                <li>Business / IT Project Management</li>
+                                <li>Business Analysis & Consultation</li>
+                                <li>System Management & Coordination</li>
+                                <li>IT Sales & Marketing</li>
+                                <li>Product / Software Development</li>
+                                <li>Entre-preneurship</li>
                             </ul>
-                            <p>According to the Government’s Report on Manpower Projection to 2027, the Warehousing and other transportation support services is expected to grow on the back of the booming growth of e-commerce worldwide and thus an ever-increasing demand for cross-border logistics and storage services.</p>
-
-                            
-                            
+                            <p>With the rapid development of e-commerce, different industries are trying to keep pace with the times, hope to make use of information systems to improve management efficiency.</p>
+                            <p>The results of the graduate employment survey in 2021 revealed that while the pandemic hit the whole global economy, the mean salary of BMSIM graduates increased by 0.96% compared to the graduates in 2020. The increasing salary shows that the industry highly values our graduates' knowledge and skills.</p>
+                            <img src="http://localhost/bingo/wp-content/themes/hsuhk/static/images/ca.jpg" alt="images">
                         </div>
 
-
-
-                    
-
-                        <div class="title mt-5 fs28 white  wow fadeInUp" title="Message from Industry">Message from Industry</div>
+                        <div class="title fs28 mt-5 white  wow fadeInUp" title="Graduate Sharing">Graduate Sharing</div>
                         <div class="txt fs18  wow fadeInUp">
                             <div class="IOlist">
                                 <div class="row">
-                                <?php
+                                    <?php
                                     $args = array(
                                         'post_type' => 'post',
-                                        'category_name' =>'msc-gscm-career',
+                                        'category_name' =>'bmsim-career',
                                         'posts_per_page' => 6,
                                         'paged' => get_query_var('paged') // Add this line to update the page number
                                     );
@@ -152,9 +140,9 @@
 
                                 </div>
                             </div>
+                            
                         </div>
 
-                 
                   
             
                 
@@ -170,4 +158,8 @@
             
     </section>
 
+
+
+
+ 
 </main>

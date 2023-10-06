@@ -1,9 +1,14 @@
-<?php /* Template Name: MSc-GSCM-Career-Prospects */ ?> 
+ <?php 
+    $year = date('Y');
+    if(isset($_SESSION["year"])) {
+        $year = intval($_SESSION["year"]);
+    }
+ ?>
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
             <div class="container">
-                <h1 class="fs36 blueLight bold wow fadeInUp" title="Career Prospects">Career Prospects</h1>
+                <h1 class="fs36 blueLight bold wow fadeInUp" title="畢業生分享">畢業生分享</h1>
               
                 
             </div>
@@ -12,13 +17,13 @@
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="../" title="Home">Home</a>   
-                     <span>/</span>
-                     <a href="" title="Programmes">Programmes</a>
-                     <span>/</span>
-                     <a href="../MSc-GSCM-Cover/" title="Master of Science in Global Supply Chain Management (MSc-GSCM) ">Master of Science in Global Supply Chain Management (MSc-GSCM)</a>
-                     <span>/</span>
-                     <a href="" title="Career Prospects">Career Prospects</a>
+                    <a href="<?=home_url(); ?>" title="Home">首頁</a>
+                    <span>/</span>
+                    <a href="" title="Programmes">課程</a>
+                    <span>/</span>
+                    <a href="" title="全球供應鏈管理理學碩士（MSC-GSCM） ">全球供應鏈管理理學碩士（MSC-GSCM）</a>
+                    <span>/</span>
+                    <a href="" title="畢業生分享">畢業生分享</a>
             </div>
     </div>
 
@@ -29,59 +34,50 @@
            <div class="row">
                <div class="col-md-2 col-sm-12 col-xs-12 left">
                    <div class="mt-5">
-                    <h2 class="fs20 pc blueLight bold wow fadeInUp" title="Master of Science in Global Supply Chain Management (MSc-GSCM)">Master of Science in Global Supply Chain Management (MSc-GSCM)</h2>
-                    <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Master of Science in Global Supply Chain Management (MSc-GSCM)">Master of Science in Global Supply Chain Management (MSc-GSCM)</h2>
+                    <h2 class="fs20 pc blueLight bold wow fadeInUp" title="全球供應鏈管理理學碩士（MSC-GSCM）">全球供應鏈管理理學碩士（MSC-GSCM）</h2>
+                    <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="全球供應鏈管理理學碩士（MSC-GSCM）">全球供應鏈管理理學碩士（MSC-GSCM）</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
-                        <ul>         	        
-                            <li><a  href="../msc-gscm-programme-overview/"  title="Programme Overview ">Programme Overview </a> </li>        
-                            <li><a  href="../MSc-GSCM-Academic-Structure/" title="Academic Structure">Academic Structure</a> </li>  
-                            <li><a  href="../MSc-GSCM-Career-Prospects/"   class="active" title="Career Prospects" >Career Prospects</a> </li>  
-                            <li><a  href="../MSc-GSCM-Scholarships-FinancialAid/" title="Scholarship & Financial Aids">Scholarship & Financial Aids</a> </li>        
-                            <li><a  href="../MSc-GSCM-Graduate-Sharing/"   title="Graduate Sharing">Graduate Sharing</a> </li>  
-                            <li><a  href="../MSc-GSCM-Admission/"  title="Admission" >Admission</a> </li>  
-                                
+                    <ul>         	        
+                            <li><a  href="../msc-gscm-programme-overview-zh/"  title="Programme Overview ">獎學金和經濟援助</a> </li>        
+                            <li><a  href="../MSc-GSCM-Academic-Structure-zh/" title="Academic Structure">學術結構</a> </li>  
+                            <li><a  href="../MSc-GSCM-Career-Prospects-zh/"   title="Career Prospects" >職業前景</a> </li>  
+                            <li><a  href="../MSc-GSCM-Scholarships-FinancialAid-zh/" title="Scholarship & Financial Aids">獎學金和經濟援助</a> </li>        
+                            <li><a  href="../MSc-GSCM-Graduate-Sharing-zh/"  class="active"  title="畢業生分享">畢業生分享</a> </li>  
+                            <li><a  href="../MSc-GSCM-Admission-zh/"  title="Admission" >入場</a> </li>         
                         </ul>
                     </div>
                   </div>
                </div>
                <div class="col-md-10 col-sm-12 col-xs-12 right">
                     <div class="pl-3 mt-5 mb-5">
-                        
-                        <div class="title fs28 white  wow fadeInUp" title="Career Prospects">Career Prospects</div>
+                        <div class="title fs28 white  wow fadeInUp" title="畢業生分享">畢業生分享</div>
                         <div class="txt fs18  wow fadeInUp">
-                            <p>The programme aims to cultivate student to be management professionals with analytical thoughts and innovative and design solutions for business. Graduates are expected to have the abilities to join various professions including:</p>
-                            <ul>
-                                <li>Procurement Analyst</li>
-                                <li>Purchasing Manager</li>
-                                <li>Logistics Manager</li>
-                                <li>Supply Chain Manager</li>
-                                <li>Supply Chain Analyst</li>
-
-                                <li>Warehouse Manager</li>
-                                <li>Production Planner</li>
-                                <li>Sourcing Manager</li>
-                                <li>Inventory Specialist</li>
-                                <li>Business Analyst</li>
-                            </ul>
-                            <p>According to the Government’s Report on Manpower Projection to 2027, the Warehousing and other transportation support services is expected to grow on the back of the booming growth of e-commerce worldwide and thus an ever-increasing demand for cross-border logistics and storage services.</p>
-
-                            
-                            
-                        </div>
-
-
-
-                    
-
-                        <div class="title mt-5 fs28 white  wow fadeInUp" title="Message from Industry">Message from Industry</div>
-                        <div class="txt fs18  wow fadeInUp">
-                            <div class="IOlist">
-                                <div class="row">
-                                <?php
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="name">年</label>
+                                    <div class="relative">
+                                        <select class="form-control" id="graduate_year_selection" lang="zh">
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="result">
+                                <h2 class="fs28 bold blueLight mt-5"> <?php echo $year; ?> 年畢業生</h2>
+                                <div class="IOlist mt-3">
+                                    <div class="row">
+                                    <?php
                                     $args = array(
                                         'post_type' => 'post',
                                         'category_name' =>'msc-gscm-career',
                                         'posts_per_page' => 6,
+                                        'meta_query' => array(
+                                            array(
+                                                'key' => 'graduate_year', // ACF meta key
+                                                'value' => $year, // Value to filter by
+                                                'compare' => '=', // Comparison operator (default is '=')
+                                            ),
+                                        ),
                                         'paged' => get_query_var('paged') // Add this line to update the page number
                                     );
                                     
@@ -149,15 +145,12 @@
                                     wp_reset_postdata();
                                 }
                             ?>
-
+                                    </div>
                                 </div>
                             </div>
+                            
+                            
                         </div>
-
-                 
-                  
-            
-                
                     </div>
                </div>
            </div>
@@ -170,4 +163,8 @@
             
     </section>
 
+
+
+
+ 
 </main>

@@ -1,9 +1,9 @@
-<?php /* Template Name: MSc-GSCM-Career-Prospects */ ?> 
+ 
 <main>
     <section class="page-banner position-relative">
         <div class="inner">
             <div class="container">
-                <h1 class="fs36 blueLight bold wow fadeInUp" title="Career Prospects">Career Prospects</h1>
+                <h1 class="fs36 blueLight bold wow fadeInUp" title="職業前景">職業前景</h1>
               
                 
             </div>
@@ -12,13 +12,13 @@
     </section>
     <div class="bread">
             <div class="container">
-                     <a href="../" title="Home">Home</a>   
+                     <a href="../" title="Home">首頁</a>   
                      <span>/</span>
-                     <a href="" title="Programmes">Programmes</a>
+                     <a href="" title="Programmes">課程</a>
                      <span>/</span>
-                     <a href="../MSc-GSCM-Cover/" title="Master of Science in Global Supply Chain Management (MSc-GSCM) ">Master of Science in Global Supply Chain Management (MSc-GSCM)</a>
+                     <a href="" title="全球供應鏈管理理學碩士（MSC-GSCM） ">全球供應鏈管理理學碩士（MSC-GSCM）</a>
                      <span>/</span>
-                     <a href="" title="Career Prospects">Career Prospects</a>
+                     <a href="" title="職業前景">職業前景</a>
             </div>
     </div>
 
@@ -29,16 +29,16 @@
            <div class="row">
                <div class="col-md-2 col-sm-12 col-xs-12 left">
                    <div class="mt-5">
-                    <h2 class="fs20 pc blueLight bold wow fadeInUp" title="Master of Science in Global Supply Chain Management (MSc-GSCM)">Master of Science in Global Supply Chain Management (MSc-GSCM)</h2>
-                    <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="Master of Science in Global Supply Chain Management (MSc-GSCM)">Master of Science in Global Supply Chain Management (MSc-GSCM)</h2>
+                    <h2 class="fs20 pc blueLight bold wow fadeInUp" title="全球供應鏈管理理學碩士（MSC-GSCM）">全球供應鏈管理理學碩士（MSC-GSCM）</h2>
+                    <h2 class="fs20 mobile blueLight bold wow fadeInUp" title="全球供應鏈管理理學碩士（MSC-GSCM）">全球供應鏈管理理學碩士（MSC-GSCM）</h2>
                     <div class="menu-box mt-3 wow fadeInUp">
                         <ul>         	        
-                            <li><a  href="../msc-gscm-programme-overview/"  title="Programme Overview ">Programme Overview </a> </li>        
-                            <li><a  href="../MSc-GSCM-Academic-Structure/" title="Academic Structure">Academic Structure</a> </li>  
-                            <li><a  href="../MSc-GSCM-Career-Prospects/"   class="active" title="Career Prospects" >Career Prospects</a> </li>  
-                            <li><a  href="../MSc-GSCM-Scholarships-FinancialAid/" title="Scholarship & Financial Aids">Scholarship & Financial Aids</a> </li>        
-                            <li><a  href="../MSc-GSCM-Graduate-Sharing/"   title="Graduate Sharing">Graduate Sharing</a> </li>  
-                            <li><a  href="../MSc-GSCM-Admission/"  title="Admission" >Admission</a> </li>  
+                            <li><a  href="../msc-gscm-programme-overview-zh/"  title="計劃概覽 ">計劃概覽 </a> </li>        
+                            <li><a  href="../MSc-GSCM-Academic-Structure-zh/" title="Academic Structure">學術結構</a> </li>  
+                            <li><a  href="../MSc-GSCM-Career-Prospects-zh/"   class="active" title="職業前景" >職業前景</a> </li>  
+                            <li><a  href="../MSc-GSCM-Scholarships-FinancialAid-zh/" title="Scholarship & Financial Aids">獎學金和經濟援助</a> </li>        
+                            <li><a  href="../MSc-GSCM-Graduate-Sharing-zh/"   title="Graduate Sharing">畢業生分享</a> </li>  
+                            <li><a  href="../MSc-GSCM-Admission-zh/"  title="Admission" >入場</a> </li>  
                                 
                         </ul>
                     </div>
@@ -47,33 +47,24 @@
                <div class="col-md-10 col-sm-12 col-xs-12 right">
                     <div class="pl-3 mt-5 mb-5">
                         
-                        <div class="title fs28 white  wow fadeInUp" title="Career Prospects">Career Prospects</div>
+                        <div class="title fs28 white  wow fadeInUp" title="職業前景">職業前景</div>
                         <div class="txt fs18  wow fadeInUp">
-                            <p>The programme aims to cultivate student to be management professionals with analytical thoughts and innovative and design solutions for business. Graduates are expected to have the abilities to join various professions including:</p>
+                            <p>該計劃旨在培養具有分析思維和創新設計解決方案的管理專業人士。畢業生有望具備以下能力，並能從事各種職業：</p>
                             <ul>
-                                <li>Procurement Analyst</li>
-                                <li>Purchasing Manager</li>
-                                <li>Logistics Manager</li>
-                                <li>Supply Chain Manager</li>
-                                <li>Supply Chain Analyst</li>
-
-                                <li>Warehouse Manager</li>
-                                <li>Production Planner</li>
-                                <li>Sourcing Manager</li>
-                                <li>Inventory Specialist</li>
-                                <li>Business Analyst</li>
+                                <li>採購分析師</li>
+                                <li>採購經理</li>
+                                <li>物流經理</li>
+                                <li>供應鏈經理</li>
+                                <li>供應鏈分析師</li>
+                                <li>倉庫經理</li>
+                                <li>生產計劃師</li>
+                                <li>採購經理</li>
+                                <li>庫存專家</li>
+                                <li>業務分析師</li>
                             </ul>
-                            <p>According to the Government’s Report on Manpower Projection to 2027, the Warehousing and other transportation support services is expected to grow on the back of the booming growth of e-commerce worldwide and thus an ever-increasing demand for cross-border logistics and storage services.</p>
-
-                            
-                            
+                            <p>根據政府《2027年勞動力預測報告》，隨著全球電子商務的蓬勃發展，倉儲和其他運輸支持服務預計將增長，從而對跨境物流和存儲服務的需求不斷增加。</p>
                         </div>
-
-
-
-                    
-
-                        <div class="title mt-5 fs28 white  wow fadeInUp" title="Message from Industry">Message from Industry</div>
+                        <div class="title mt-5 fs28 white  wow fadeInUp" title="Message from Industry">來自行業的信息</div>
                         <div class="txt fs18  wow fadeInUp">
                             <div class="IOlist">
                                 <div class="row">
@@ -150,10 +141,13 @@
                                 }
                             ?>
 
+
+
+
+
                                 </div>
                             </div>
                         </div>
-
                  
                   
             

@@ -67,10 +67,21 @@ $(function () {
 
 $(function(){
     $('#menu-header .menu-item-has-children').hover(function(){
-        $(this).addClass('active');
+      $(this).addClass('active');
+      $(this).removeClass('z-index-8');
     },function(){
        $(this).removeClass('active');
+      $(this).addClass('z-index-8');
+
     })
+    $('#menu-header_cn .menu-item-has-children').hover(function(){
+      $(this).removeClass('z-index-8');
+      $(this).addClass('active');
+    },function(){
+      $(this).addClass('z-index-8');
+      $(this).removeClass('active');
+    })
+
 });
 
 

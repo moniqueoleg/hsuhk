@@ -14,11 +14,11 @@
 
 
     //Submenu Dropdown Toggle
-    if ($('.main-header li.dropdown ul').length) {
-        $('.main-header li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
+    if ($('.main-header li.menu-item-has-children ul').length) {
+        $('.main-header li.menu-item-has-children').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
 
         //Dropdown Button
-        $('.main-header li.dropdown .dropdown-btn').on('click', function() {
+        $('.main-header li.menu-item-has-children .dropdown-btn').on('click', function() {
             $(this).prev('ul').slideToggle(500);
         });
 
@@ -41,7 +41,7 @@
 
 
         //Hide / Show Submenu
-        $('.mobile-menu .navigation > li.dropdown > .dropdown-btn').on('click', function(e) {
+        $('.mobile-menu .navigation > li.menu-item-has-children > .dropdown-btn').on('click', function(e) {
             e.preventDefault();
             var target = $(this).parent('li').children('ul');
 
@@ -50,12 +50,12 @@
                 $(this).parent('li').removeClass('open');
                 $(target).slideUp(500);
                 //$(this).parents('.navigation').children('li.dropdown').removeClass('open');
-                $(this).parents('.navigation').children('li.dropdown > ul').slideUp(500);
+                $(this).parents('.navigation').children('li.menu-item-has-children > ul').slideUp(500);
                 return false;
             } else {
 
                 //$(this).parents('.navigation').children('li.dropdown').removeClass('open');
-                $(this).parents('.navigation').children('li.dropdown').children('ul').slideUp(500);
+                $(this).parents('.navigation').children('li.menu-item-has-children').children('ul').slideUp(500);
                 $(this).parent('li').toggleClass('open');
                 $(this).parent('li').children('ul').slideToggle(500);
             }

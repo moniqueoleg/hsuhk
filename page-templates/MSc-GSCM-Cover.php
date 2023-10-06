@@ -1,51 +1,8 @@
 <?php /* Template Name: MSc-GSCM-Cover */ ?>
 <main>
-    <section class="banner position-relative wow fadeInUp">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/side2.jpg" alt="banner"></div>
-                    <div class="inner">
-                        <div class="container">
-                            <div class="banText banText2">
-                                <h1 class="fs36 bold blueText">Master of Science in<br/>Global Supply Chain Management</h1>
-                                <a href="" class="more">More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/side2.jpg" alt="banner"></div>
-                    <div class="inner">
-                        <div class="container">
-                            <div class="banText banText2">
-                                <h1 class="fs36 bold blueText">Master of Science in<br/>Global Supply Chain Management</h1>
-                                <a href="" class="more">More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="boximg"><img src="<?=get_template_directory_uri()?>/static/images/side2.jpg" alt="banner"></div>
-                    <div class="inner">
-                        <div class="container">
-                            <div class="banText banText2">
-                                <h1 class="fs36 bold blueText">Master of Science in<br/>Global Supply Chain Management</h1>
-                                <a href="" class="more">More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             
-             
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
 
-    </section>
 
+    <?php the_content(); ?>
 
   
     <section class="first-block py-5 wow fadeInUp" >
@@ -148,6 +105,5 @@
 
  
 </main>
-<?php require_once "footer2.php"; ?>
 
 

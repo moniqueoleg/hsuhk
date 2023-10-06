@@ -806,7 +806,7 @@ body .row {
   display: none !important;
 }
 
-.menu-header .sub-menu {
+.menu-header .sub-menu, .menu-header_cn .sub-menu {
   position: relative;
   text-align: left !important;
   
@@ -4197,6 +4197,9 @@ header .links a:hover {
   position: relative;
 }
 
+.index-block .IOlist > .row {
+  z-index: 10!important;
+}
 .index-block .IOlist .col-md-6 a, .index-block .IOlist .col-md-12 a {
   display: flex;
   justify-content: space-between;
@@ -6212,6 +6215,7 @@ main {
 
 .pageinfo ul li a {
   padding: 0.5rem 0.9rem;
+  display: inline-block;
   color: #000000;
   border: 1px solid #DDDDDD;
   border-radius: 5px;
@@ -6252,7 +6256,15 @@ main {
 }
 
 .pageinfo span {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 1);
+  display: inline-block;
+  font-weight: bold;
+  font-family: 'Roboto-Bold';
+  padding: 0.5rem 0.9rem;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  background: #ffffff;
+  text-decoration: none !important;
 }
 
 #certify {
@@ -6370,4 +6382,53 @@ main {
   animation-name: fadeInUp;
   margin-bottom: 0!important;
   
+}
+
+/* Which language is actiavated */
+.lang a.active-language {
+  font-weight: bolder;
+  color: #000;
+}
+.mobile-menu .lang a.active-language {
+  background: #4D5498;
+  color: #fff;
+}
+.z-index-8 {
+  z-index: 8!important;
+}
+
+/* .gutena-tab-title-text {
+  color:#3F468B!important;
+} */
+
+.gutena-tab-title {
+  list-style: none!important;
+  color: #3F468B!important;
+  border-color: #3F468B!important;
+}
+
+.gutena-tabs-block>.gutena-tabs-tab>.gutena-tab-title.active {
+  background-color: #3F468B!important;
+  color:white!important;
+}
+
+.wp-block-gutena-tab {
+  padding: 0!important;
+  border: 1px solid #3F468B!important;
+  border-radius: 10px!important;
+  overflow: hidden!important;
+  margin-top: 1rem!important;
+  background: #F0F4F8!important;
+  font-size: 18px!important;
+}
+
+.wp-block-gutena-tab > p:first-child {
+    background: #3F468B!important;
+    color: #ffffff!important;
+    padding: 1rem!important;
+    margin-bottom: 0rem!important;
+    font-weight: bold!important;
+}
+.wp-block-gutena-tab > ul {
+  margin: 2rem!important;
 }
